@@ -52,14 +52,14 @@ const nextQuestion = createSelector(
   }
 );
 
-const allAnswers = createSelector(
+const answers = createSelector(
   answersSelector,
-  (answers) => answers.toJS()
+  (allAnswers) => allAnswers.toJS()
 );
 
 const score = createSelector(
   answersSelector,
-  (answers) => answers.count(answer => answer.get('correct'))
+  (allAnswers) => allAnswers.count(answer => answer.get('correct'))
 );
 
 export default {
@@ -69,6 +69,6 @@ export default {
   currentAnswer,
   nextQuestionIndex,
   nextQuestion,
-  allAnswers,
+  answers,
   score,
 };

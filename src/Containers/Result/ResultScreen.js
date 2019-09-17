@@ -35,7 +35,7 @@ function ResultScreen(props) {
 }
 
 const mapStateToProps = (state) => ({
-  answers: GameSelectors.allAnswers(state),
+  answers: GameSelectors.answers(state),
   score: GameSelectors.score(state),
 });
 

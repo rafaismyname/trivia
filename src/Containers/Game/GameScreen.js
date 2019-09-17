@@ -44,7 +44,6 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  newGame: () => dispatch(GameActions.newGame()),
   chooseAnswer: (answer) => dispatch(GameActions.chooseGameCurrentAnswer(answer)),
 });
 
