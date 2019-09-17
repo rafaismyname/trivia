@@ -6,8 +6,6 @@ import { GameTypes } from './Actions';
 export const newGame = (state) => {
   return state.merge({
     loading: true,
-    currentScore: 0,
-    currentQuestionIndex: null,
   });
 };
 
@@ -27,7 +25,6 @@ export const setGameCurrentQuestion = (state, { index, question }) => {
 };
 
 export const setGameCurrentAnswer = (state, { answer, correct }) => {
-  const currentScore = state.get('currentScore');
   const currentAnswers = state.get('answers');
   const currentAnswer = Map({
     answer,
@@ -38,9 +35,8 @@ export const setGameCurrentAnswer = (state, { answer, correct }) => {
 
   return state.merge({
     loading: false,
-    currentAnswer: Map({ answer, correct }),
-    currentScore: correct ? currentScore + 1 : currentScore, // if it's correct, increase score
     answers: currentAnswers.push(currentAnswer),
+    currentAnswer: Map({ answer, correct }),
   });
 };
 

@@ -7,5 +7,4 @@ export const INITIAL_STATE = Map({
   currentQuestionIndex: null,
   answers: List(),
   currentAnswer: Map(),
-  currentScore: null,
 });

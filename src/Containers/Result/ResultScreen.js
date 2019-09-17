@@ -2,20 +2,18 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Layout, Text, Button, Icon } from 'react-native-ui-kitten';
 import { List, ListItem } from 'react-native-ui-kitten';
-import { AllHtmlEntities } from 'html-entities';
 import BaseLayout from '../../Components/BaseLayout';
 import GameActions from '../../Stores/Game/Actions';
+import GameSelectors from '../../Stores/Game/Selectors';
 import i18n from '../../Locales/i18n';
 import Style from './ResultScreenStyle';
-
-const entities = new AllHtmlEntities();
 
 function ResultScreen(props) {
   const renderAnswer = ({ item }) => {
     return (
       <ListItem
-        title={entities.decode(item.question.question)}
-        description={entities.decode(item.question.category)}
+        title={item.question.question}
+        description={item.question.category}
         icon={() => <Icon name={item.correct ? 'checkmark-circle-2-outline' : 'close-outline'} />}
       />
     );
@@ -37,8 +35,8 @@ function ResultScreen(props) {
 }
 
 const mapStateToProps = (state) => ({
-  score: state.game.get('currentScore'),
-  answers: state.game.get('answers').toJS(),
+  answers: GameSelectors.allAnswers(state),
+  score: GameSelectors.score(state),
 });
 
 const mapDispatchToProps = (dispatch) => ({

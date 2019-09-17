@@ -1,6 +1,5 @@
 {
   "general": {
-    "loading": "Loading",
     "footer": "made with ❤️by @rafaismyname",
     "unknown": "Uknown",
     "errorMessage": "Something when wrong..."
@@ -11,10 +10,8 @@
     "teaser": "are you good enough to score 100%?"
   },
   "game": {
-    "currentScore": "Current Score",
     "true": "True",
-    "false": "False",
-    "next": "Next"
+    "false": "False"
   },
   "result": {
     "score": "Your Score",
