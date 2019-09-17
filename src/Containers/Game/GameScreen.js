@@ -1,115 +1,55 @@
-import React, { useState } from 'react';
-import { Layout, Text, Spinner, Button } from 'react-native-ui-kitten';
+import React from 'react';
+import { connect } from 'react-redux';
+import { Layout, Text, Button } from 'react-native-ui-kitten';
 import { AllHtmlEntities } from 'html-entities';
+import GameActions from '../../Stores/Game/Actions';
+import i18n from '../../Locales/i18n';
 import Style from './GameScreenStyle';
 
 const entities = new AllHtmlEntities();
 
-export default function GameScreen() {
-  const [loading, setLoading] = useState(false);
-  const [questions, setQuestions] = useState([]);
-  const [score, setScore] = useState(0);
-  const [currentQuestion, setCurrentQuestion] = useState({});
-
-  const resetGame = () => {
-    setLoading(false);
-    setQuestions([]);
-    setScore(0);
-    setCurrentQuestion({});
-  };
-
-  const newGame = () => {
-    setLoading(true);
-
-    fetch('https://opentdb.com/api.php?amount=10&difficulty=hard&type=boolean')
-      .then((response) => response.json())
-      .then((response) => {
-        const fetchedQuestions = response.results;
-        setQuestions(fetchedQuestions);
-        setCurrentQuestion({ index: 0, ...fetchedQuestions[0] });
-        setLoading(false);
-      })
-      .catch(() => resetGame());
-  };
-
-  const chooseAnswer = (choosenAnswer) => {
-    if (currentQuestion.answer) {
-      return;
-    }
-
-    const answer = choosenAnswer ? 'True' : 'False';
-    const correct = answer === currentQuestion.correct_answer;
-    const answeredQuestion = { ...currentQuestion, answer, correct };
-
-    setScore(correct ? score + 1 : score);
-    setCurrentQuestion(answeredQuestion);
-
-    setTimeout(() => nextQuestion(), 2000);
-  };
-
-  const nextQuestion = () => {
-    const nextIndex = currentQuestion.index + 1;
-
-    if (nextIndex >= questions.length) {
-      return resetGame();
-    }
-
-    setCurrentQuestion({ index: nextIndex, ...questions[nextIndex] });
-  };
-
+function GameScreen(props) {
   return (
     <Layout style={Style.container}>
       <Layout style={Style.title}>
         <Text category="h1">trivia</Text>
       </Layout>
       <Layout style={Style.main}>
-        { loading && (
-          <Spinner size="giant" />
-        ) }
-
-        { !loading && !questions.length && (
-          <Button size="large" onPress={newGame}>Start</Button>
-        ) }
-
-        { !loading && questions.length > 0 && (
-          <Layout>
-            <Layout style={Style.score}>
-              <Text category="h6">Score: {score}</Text>
-            </Layout>
-            <Layout style={Style.question}>
-              <Text category="c1">{currentQuestion.index + 1} of {questions.length}</Text>
-              <Text category="h4">{entities.decode(currentQuestion.question)}</Text>
-            </Layout>
-            <Layout style={Style.answer}>
-              <Button
-                size="large"
-                appearance={currentQuestion.answer === 'True' ? 'filled' : 'outline'}
-                status={
-                  currentQuestion.answer === 'True'
-                    ? currentQuestion.correct ? 'success' : 'danger'
-                    : 'primary'
-                }
-                style={Style.answerBtn}
-                onPress={() => chooseAnswer(true)}
-              >
-                True
-              </Button>
-              <Button
-                size="large"
-                appearance={currentQuestion.answer === 'False' ? 'filled' : 'outline'}
-                status={
-                  currentQuestion.answer === 'False'
-                    ? currentQuestion.correct ? 'success' : 'danger'
-                    : 'primary'
-                }
-                style={Style.answerBtn}
-                onPress={() => chooseAnswer(false)}
-              >
-                False
-              </Button>
-            </Layout>
-          </Layout>
-        ) }
+        <Layout style={Style.currentScore}>
+          <Text category="h6">{i18n.t('game.currentScore')}: {props.currentScore}</Text>
+        </Layout>
+        <Layout style={Style.question}>
+          <Text category="c1">{props.currentQuestionIndex + 1} of {props.questions.size}</Text>
+          <Text category="h4">{entities.decode(props.currentQuestion.question)}</Text>
+        </Layout>
+        <Layout style={Style.answer}>
+          <Button
+            size="large"
+            appearance={props.currentAnswer.answer === 'True' ? 'filled' : 'outline'}
+            status={
+              props.currentAnswer.answer === 'True'
+                ? props.currentAnswer.correct ? 'success' : 'danger'
+                : 'primary'
+            }
+            style={Style.answerBtn}
+            onPress={() => props.chooseAnswer(true)}
+          >
+            {i18n.t('game.true')}
+          </Button>
+          <Button
+            size="large"
+            appearance={props.currentAnswer.answer === 'False' ? 'filled' : 'outline'}
+            status={
+              props.currentAnswer.answer === 'False'
+                ? props.currentAnswer.correct ? 'success' : 'danger'
+                : 'primary'
+            }
+            style={Style.answerBtn}
+            onPress={() => props.chooseAnswer(false)}
+          >
+            {i18n.t('game.false')}
+          </Button>
+        </Layout>
       </Layout>
       <Layout style={Style.footer}>
         <Text category="c1">made with 🖤 by @rafaismy.name</Text>
@@ -117,3 +57,18 @@ export default function GameScreen() {
     </Layout>
   );
 }
+
+const mapStateToProps = (state) => ({
+  questions: state.game.get('questions'),
+  currentQuestion: state.game.get('currentQuestion').toJS(),
+  currentQuestionIndex: state.game.get('currentQuestionIndex'),
+  currentAnswer: state.game.get('currentAnswer').toJS(),
+  currentScore: state.game.get('currentScore'),
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  newGame: () => dispatch(GameActions.newGame()),
+  chooseAnswer: (answer) => dispatch(GameActions.chooseGameCurrentAnswer(answer)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(GameScreen);

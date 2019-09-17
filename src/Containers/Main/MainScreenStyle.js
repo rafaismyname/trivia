@@ -16,22 +16,6 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  currentScore: {
-    alignItems: 'center',
-    marginBottom: 50,
-  },
-  question: {
-    paddingHorizontal: 25,
-  },
-  answer: {
-    flexDirection: 'row',
-    marginTop: 50,
-    paddingHorizontal: 25,
-    alignSelf: 'center',
-  },
-  answerBtn: {
-    marginHorizontal: 25,
-  },
   footer: {
     flex: 0.2,
     justifyContent: 'flex-end',

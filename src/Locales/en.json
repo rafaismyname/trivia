@@ -1,5 +1,14 @@
 {
   "general": {
     "loading": "Loading"
+  },
+  "main": {
+    "start": "Start!"
+  },
+  "game": {
+    "currentScore": "Current Score",
+    "true": "True",
+    "false": "False",
+    "next": "Next"
   }
 }
