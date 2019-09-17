@@ -11,7 +11,6 @@ const entities = new AllHtmlEntities();
 
 function ResultScreen(props) {
   const renderAnswer = ({ item }) => {
-    console.log(item);
     return (
       <ListItem
         title={entities.decode(item.question.question)}
