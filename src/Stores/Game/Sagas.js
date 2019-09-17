@@ -1,18 +1,29 @@
 import { put, select, delay } from 'redux-saga/effects';
+import { Alert } from 'react-native';
+import i18n from '../../Locales/i18n';
 import TriviaApiService from '../../Services/TriviaApiService';
 import NavigationService from '../../Services/NavigationService';
 import GameActions from './Actions';
 
 export function* newGame() {
-  // fetch questions from OTDB
-  const questions = yield TriviaApiService.fetchQuestions();
-  yield put(GameActions.updateGameQuestions(questions));
+  try {
+    // fetch questions from OTDB
+    const questions = yield TriviaApiService.fetchQuestions();
+    yield put(GameActions.updateGameQuestions(questions));
 
-  // init first question
-  yield put(GameActions.nextGameQuestion());
+    // init first question
+    yield put(GameActions.nextGameQuestion());
 
-  // begin game!
-  NavigationService.navigateAndReset('GameScreen');
+    // begin game!
+    NavigationService.navigateAndReset('GameScreen');
+  } catch (e) {
+    // if fetching from OTDB fails, alert user about error and reset game
+    const errorMsg = e && e.message || i18n.t('general.unknown');
+    const alertMsg = `${i18n.t('general.errorMessage')}\n(${errorMsg})`;
+    Alert.alert('Oooops :(', alertMsg, [], { cancelable: true });
+
+    yield put(GameActions.resetGame());
+  }
 }
 
 export function* chooseAnswer({ answer }) {

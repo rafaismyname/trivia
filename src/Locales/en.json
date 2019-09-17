@@ -1,7 +1,9 @@
 {
   "general": {
     "loading": "Loading",
-    "footer": "made with ❤️by @rafaismyname"
+    "footer": "made with ❤️by @rafaismyname",
+    "unknown": "Uknown",
+    "errorMessage": "Something when wrong..."
   },
   "main": {
     "start": "Start!",
