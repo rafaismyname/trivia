@@ -8,6 +8,7 @@ import NavigationService from '../../Services/NavigationService';
 import SplashScreen from '../Splash/SplashScreen';
 import MainScreen from '../Main/MainScreen';
 import GameScreen from '../Game/GameScreen';
+import ResultScreen from '../Result/ResultScreen';
 
 // Root is where our navigation lives
 const AppStackNav = createStackNavigator(
@@ -15,6 +16,7 @@ const AppStackNav = createStackNavigator(
     SplashScreen,
     MainScreen,
     GameScreen,
+    ResultScreen,
   },
   {
     initialRouteName: 'MainScreen',

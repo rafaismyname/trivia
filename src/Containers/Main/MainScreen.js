@@ -14,9 +14,13 @@ function MainScreen(props) {
       <Layout style={Style.main}>
         { props.loading && (<Spinner size="giant" />) }
         { !props.loading && (
-          <Button size="large" onPress={props.newGame}>
-            {i18n.t('main.start')}
-          </Button>
+          <Layout style={Style.intro}>
+            <Text category="s1">{i18n.t('main.intro')}</Text>
+            <Text category="s2">{i18n.t('main.teaser')}</Text>
+            <Button size="large" style={Style.beginBtn} onPress={props.newGame}>
+              {i18n.t('main.start')}
+            </Button>
+          </Layout>
         ) }
       </Layout>
       <Layout style={Style.footer}>

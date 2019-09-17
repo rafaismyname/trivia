@@ -7,5 +7,6 @@ export default function* root() {
     takeLatest(GameTypes.NEW_GAME, GameSaga.newGame),
     takeLatest(GameTypes.CHOOSE_GAME_CURRENT_ANSWER, GameSaga.chooseAnswer),
     takeLatest(GameTypes.NEXT_GAME_QUESTION, GameSaga.nextGameQuestion),
+    takeLatest(GameTypes.RESET_GAME, GameSaga.resetGame),
   ]);
 }

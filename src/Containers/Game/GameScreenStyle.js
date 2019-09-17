@@ -12,7 +12,7 @@ export default StyleSheet.create({
     marginTop: 50,
   },
   main: {
-    flex: 0.8,
+    flex: 0.6,
     alignItems: 'center',
     justifyContent: 'center',
   },

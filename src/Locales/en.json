@@ -3,12 +3,18 @@
     "loading": "Loading"
   },
   "main": {
-    "start": "Start!"
+    "start": "Start!",
+    "intro": "trivia is a simple \"boolean\" trivia game",
+    "teaser": "are you good enough to score 100%?"
   },
   "game": {
     "currentScore": "Current Score",
     "true": "True",
     "false": "False",
     "next": "Next"
+  },
+  "result": {
+    "score": "Your Score",
+    "backToMain": "Back to main screen"
   }
 }

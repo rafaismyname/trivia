@@ -15,11 +15,9 @@ function GameScreen(props) {
         <Text category="h1">trivia</Text>
       </Layout>
       <Layout style={Style.main}>
-        <Layout style={Style.currentScore}>
-          <Text category="h6">{i18n.t('game.currentScore')}: {props.currentScore}</Text>
-        </Layout>
         <Layout style={Style.question}>
           <Text category="c1">{props.currentQuestionIndex + 1} of {props.questions.size}</Text>
+          <Text category="c2">{entities.decode(props.currentQuestion.category)}</Text>
           <Text category="h4">{entities.decode(props.currentQuestion.question)}</Text>
         </Layout>
         <Layout style={Style.answer}>

@@ -49,12 +49,15 @@ export function* nextGameQuestion() {
   const getQuestions = (state) => state.game.get('questions');
   const questions = yield select(getQuestions);
 
-  // if there is no more questions, game over!
+  // if there is no more questions, "game over!" and go to results screen
   if (nextQuestionIndex >= questions.size) {
-    yield put(GameActions.resetGame());
-    return NavigationService.navigateAndReset('MainScreen');
+    return NavigationService.navigateAndReset('ResultScreen');
   }
 
   const currentQuestion = questions.get(nextQuestionIndex);
   yield put(GameActions.setGameCurrentQuestion(nextQuestionIndex, currentQuestion));
+}
+
+export function resetGame() {
+  NavigationService.navigateAndReset('MainScreen');
 }

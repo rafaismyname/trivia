@@ -7,24 +7,26 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    flex: 0.2,
+    flex: 0.1,
     justifyContent: 'flex-start',
     marginTop: 50,
   },
   main: {
-    flex: 0.6,
+    flex: 0.8,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  intro: {
-    paddingHorizontal: 25,
-    textAlign: 'center',
+  score: {
+    alignItems: 'center',
   },
-  beginBtn: {
-    marginTop: 25,
+  answers: {
+    width: 325,
+    height: 'auto',
+    maxHeight: 400,
+    marginVertical: 25,
   },
   footer: {
-    flex: 0.2,
+    flex: 0.1,
     justifyContent: 'flex-end',
     marginBottom: 50,
   },
