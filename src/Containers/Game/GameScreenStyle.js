@@ -10,7 +10,4 @@ export default StyleSheet.create({
     paddingHorizontal: 25,
     alignSelf: 'center',
   },
-  answerBtn: {
-    marginHorizontal: 25,
-  },
 });

@@ -8,9 +8,8 @@ export function* newGame() {
   const questions = yield TriviaApiService.fetchQuestions();
   yield put(GameActions.updateGameQuestions(questions));
 
-  // set first question as current
-  const currentQuestion = questions[0];
-  yield put(GameActions.setGameCurrentQuestion(0, currentQuestion));
+  // init first question
+  yield put(GameActions.nextGameQuestion());
 
   // begin game!
   NavigationService.navigateAndReset('GameScreen');
@@ -28,11 +27,11 @@ export function* chooseAnswer({ answer }) {
   const getCurrentQuestion = (state) => state.game.get('currentQuestion');
   const currentQuestion = yield select(getCurrentQuestion);
 
-  const parsedAnswer = answer ? 'True' : 'False'; // OTDB uses strings instead of bool
-  const isCorrect = parsedAnswer === currentQuestion.get('correct_answer');
+  // check if answer matches correct answer
+  const isCorrect = answer === currentQuestion.get('correct_answer');
 
   // set current answer
-  yield put(GameActions.setGameCurrentAnswer(parsedAnswer, isCorrect));
+  yield put(GameActions.setGameCurrentAnswer(answer, isCorrect));
 
   // wait a bit and move on to next question
   yield delay(2000);
@@ -43,7 +42,7 @@ export function* nextGameQuestion() {
   // get current question index
   const getCurrentQuestionIndex = (state) => state.game.get('currentQuestionIndex');
   const currentQuestionIndex = yield select(getCurrentQuestionIndex);
-  const nextQuestionIndex = currentQuestionIndex + 1;
+  const nextQuestionIndex = currentQuestionIndex === null ? 0 : currentQuestionIndex + 1;
 
   // get questions
   const getQuestions = (state) => state.game.get('questions');
@@ -59,5 +58,6 @@ export function* nextGameQuestion() {
 }
 
 export function resetGame() {
+  // reset game state and go to main screen
   NavigationService.navigateAndReset('MainScreen');
 }

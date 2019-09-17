@@ -1,9 +1,10 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import { StyleSheet } from 'react-native';
 import { Layout, Text } from 'react-native-ui-kitten';
 import i18n from '../Locales/i18n';
 
-export default function BaseLayout(props) {
+function BaseLayout(props) {
   return (
     <Layout style={Style.container}>
       <Layout style={Style.title}>
@@ -48,3 +49,9 @@ const Style = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+BaseLayout.propTypes = {
+  children: PropTypes.array.isRequired,
+};
+
+export default BaseLayout;

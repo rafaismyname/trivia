@@ -7,6 +7,7 @@ export const newGame = (state) => {
   return state.merge({
     loading: true,
     currentScore: 0,
+    currentQuestionIndex: null,
   });
 };
 

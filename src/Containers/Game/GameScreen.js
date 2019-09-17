@@ -1,8 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Layout, Text, Button } from 'react-native-ui-kitten';
+import { Layout, Text } from 'react-native-ui-kitten';
 import { AllHtmlEntities } from 'html-entities';
 import BaseLayout from '../../Components/BaseLayout';
+import AnswerButton from '../../Components/AnswerButton';
 import GameActions from '../../Stores/Game/Actions';
 import i18n from '../../Locales/i18n';
 import Style from './GameScreenStyle';
@@ -18,32 +19,20 @@ function GameScreen(props) {
         <Text category="h4">{entities.decode(props.currentQuestion.question)}</Text>
       </Layout>
       <Layout style={Style.answer}>
-        <Button
-          size="large"
-          appearance={props.currentAnswer.answer === 'True' ? 'filled' : 'outline'}
-          status={
-            props.currentAnswer.answer === 'True'
-              ? props.currentAnswer.correct ? 'success' : 'danger'
-              : 'primary'
-          }
-          style={Style.answerBtn}
-          onPress={() => props.chooseAnswer(true)}
-        >
-          {i18n.t('game.true')}
-        </Button>
-        <Button
-          size="large"
-          appearance={props.currentAnswer.answer === 'False' ? 'filled' : 'outline'}
-          status={
-            props.currentAnswer.answer === 'False'
-              ? props.currentAnswer.correct ? 'success' : 'danger'
-              : 'primary'
-          }
-          style={Style.answerBtn}
-          onPress={() => props.chooseAnswer(false)}
-        >
-          {i18n.t('game.false')}
-        </Button>
+        <AnswerButton
+          title={i18n.t('game.true')}
+          value="True"
+          answer={props.currentAnswer.answer}
+          correct={props.currentAnswer.correct}
+          callback={props.chooseAnswer}
+        />
+        <AnswerButton
+          title={i18n.t('game.false')}
+          value="False"
+          answer={props.currentAnswer.answer}
+          correct={props.currentAnswer.correct}
+          callback={props.chooseAnswer}
+        />
       </Layout>
     </BaseLayout>
   );
