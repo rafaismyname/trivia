@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Layout, Text, Button, Icon } from 'react-native-ui-kitten';
 import { List, ListItem } from 'react-native-ui-kitten';
 import { AllHtmlEntities } from 'html-entities';
+import BaseLayout from '../../Components/BaseLayout';
 import GameActions from '../../Stores/Game/Actions';
 import i18n from '../../Locales/i18n';
 import Style from './ResultScreenStyle';
@@ -21,25 +22,17 @@ function ResultScreen(props) {
   };
 
   return (
-    <Layout style={Style.container}>
-      <Layout style={Style.title}>
-        <Text category="h1">trivia</Text>
+    <BaseLayout>
+      <Layout style={Style.score}>
+        <Text category="h6">{i18n.t('result.score')}: {props.score}/{props.answers.length}</Text>
       </Layout>
-      <Layout style={Style.main}>
-        <Layout style={Style.score}>
-          <Text category="h6">{i18n.t('result.score')}: {props.score}/{props.answers.length}</Text>
-        </Layout>
-        <Layout style={Style.answers}>
-          <List data={props.answers} renderItem={renderAnswer} />
-        </Layout>
-        <Button size="large" onPress={props.resetGame}>
-          {i18n.t('result.backToMain')}
-        </Button>
+      <Layout style={Style.answers}>
+        <List data={props.answers} renderItem={renderAnswer} />
       </Layout>
-      <Layout style={Style.footer}>
-        <Text category="c1">made with 🖤 by @rafaismy.name</Text>
-      </Layout>
-    </Layout>
+      <Button onPress={props.resetGame}>
+        {i18n.t('result.backToMain')}
+      </Button>
+    </BaseLayout>
   );
 }
 

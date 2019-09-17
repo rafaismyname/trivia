@@ -1,6 +1,7 @@
 {
   "general": {
-    "loading": "Loading"
+    "loading": "Loading",
+    "footer": "made with ❤️by @rafaismyname"
   },
   "main": {
     "start": "Start!",
