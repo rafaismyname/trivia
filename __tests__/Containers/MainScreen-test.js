@@ -1,37 +1,37 @@
-import 'react-native';
 import React from 'react';
 import { shallow } from 'enzyme';
-import configureStore from 'redux-mock-store';
-import { Provider } from 'react-redux';
-import ConnectedMainScreen, { MainScreen } from '../../src/Containers/Main/MainScreen';
+import { MainScreen } from '../../src/Containers/Main/MainScreen';
 
-const mockStore = configureStore([]);
-
-const initialState = {
-  game: {
-    loading: false,
-  },
+const initialProps = {
+  loading: false,
+  newGame: jest.fn(),
 };
 
 describe('Test MainScreen container', () => {
-  it('renders correctly', () => {
-    const renderResult = shallow(<MainScreen />);
+  const wrapper = shallow(<MainScreen {...initialProps} />);
+  const render = wrapper.dive();
 
-    expect(renderResult).toMatchSnapshot();
+  it('should render properly', () => {
+    expect(render).toMatchSnapshot();
   });
 
-  it('renders correctly connected', () => {
-    const store = mockStore(initialState);
+  it('should show new game button while not loading', () => {
+    const newGameBtn = render.find('ButtonComponent');
+    expect(newGameBtn).toExist();
+  });
 
-    const renderResult = shallow(
-      <Provider store={store}>
-        <ConnectedMainScreen />
-      </Provider>,
-      { context: { store } },
-    );
+  it('should trigger newGame whe button is pressed', () => {
+    const newGameBtn = render.find('ButtonComponent');
+    newGameBtn.first().props().onPress();
 
-    const innerRenderResult = renderResult.dive();
+    expect(initialProps.newGame).toHaveBeenCalled();
+  });
 
-    expect(innerRenderResult).toMatchSnapshot();
+  it('should hide new game button while loading', () => {
+    wrapper.setProps({ loading: true });
+
+    const newGameBtn = wrapper.find('ButtonComponent');
+
+    expect(newGameBtn).not.toExist();
   });
 });

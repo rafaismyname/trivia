@@ -1,37 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test MainScreen container renders correctly 1`] = `
-<BaseLayout>
+exports[`Test MainScreen container renders correctly connected 1`] = `
+<LayoutComponent
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "marginBottom": 15,
+      "marginTop": 30,
+    }
+  }
+>
   <LayoutComponent
     style={
       Object {
-        "paddingHorizontal": 25,
-        "textAlign": "center",
+        "alignItems": "center",
+        "flex": 0.1,
+        "justifyContent": "center",
+        "width": "100%",
       }
     }
   >
     <TextComponent
-      category="s1"
+      category="h1"
     >
-      trivia is a simple "boolean" trivia game
+      trivia
     </TextComponent>
-    <TextComponent
-      category="s2"
-    >
-      are you good enough to score 100%?
-    </TextComponent>
-    <ButtonComponent
-      size="large"
+  </LayoutComponent>
+  <LayoutComponent
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 0.85,
+        "justifyContent": "center",
+        "paddingVertical": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <LayoutComponent
       style={
         Object {
-          "marginTop": 25,
+          "paddingHorizontal": 25,
+          "textAlign": "center",
         }
       }
     >
-      Start!
-    </ButtonComponent>
+      <TextComponent
+        category="s1"
+      >
+        trivia is a simple "boolean" trivia game
+      </TextComponent>
+      <TextComponent
+        category="s2"
+      >
+        are you good enough to score 100%?
+      </TextComponent>
+      <ButtonComponent
+        onPress={[MockFunction]}
+        size="large"
+        style={
+          Object {
+            "marginTop": 25,
+          }
+        }
+      >
+        Start!
+      </ButtonComponent>
+    </LayoutComponent>
   </LayoutComponent>
-</BaseLayout>
+  <LayoutComponent
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 0.05,
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <TextComponent
+      category="c1"
+    >
+      made with ❤️by @rafaismyname
+    </TextComponent>
+  </LayoutComponent>
+</LayoutComponent>
 `;
-
-exports[`Test MainScreen container renders correctly connected 1`] = `<Connect(MainScreen) />`;
