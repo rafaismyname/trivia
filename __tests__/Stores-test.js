@@ -8,13 +8,13 @@ const middlewares = [sagaMiddleware];
 const mockStore = configureStore(middlewares);
 
 describe('Test the store', () => {
-  it('expect that action generators are working properly', () => {
+  it('should expect that action generators are working properly', () => {
     const action = GameActions.newGame();
 
     expect(action).toEqual({ type: 'NEW_GAME' });
   });
 
-  it('expect that store is working properly', () => {
+  it('should expect that store is working properly', () => {
     const store = mockStore({});
 
     store.dispatch(GameActions.newGame());

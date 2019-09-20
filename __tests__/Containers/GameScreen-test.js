@@ -21,4 +21,16 @@ describe('Test GameScreen container', () => {
   it('should render properly', () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should have at least two answer buttons', () => {
+    const answerBtns = wrapper.find('AnswerButton');
+    expect(answerBtns.length).toBeGreaterThanOrEqual(2);
+  });
+
+  it('should properly trigger action when click answer button', () => {
+    const answerBtn = wrapper.find('AnswerButton').first();
+    answerBtn.props().callback();
+
+    expect(initialProps.chooseAnswer).toHaveBeenCalled();
+  });
 });

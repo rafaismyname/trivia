@@ -7,21 +7,22 @@ const initialProps = {
   newGame: jest.fn(),
 };
 
+const setup = (props = initialProps) => shallow(<MainScreen {...props} />);
+
 describe('Test MainScreen container', () => {
-  const wrapper = shallow(<MainScreen {...initialProps} />);
-  const render = wrapper.dive();
+  const wrapper = setup();
 
   it('should render properly', () => {
-    expect(render).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('should show new game button while not loading', () => {
-    const newGameBtn = render.find('ButtonComponent');
+    const newGameBtn = wrapper.find('ButtonComponent');
     expect(newGameBtn).toExist();
   });
 
   it('should trigger newGame whe button is pressed', () => {
-    const newGameBtn = render.find('ButtonComponent');
+    const newGameBtn = wrapper.find('ButtonComponent');
     newGameBtn.first().props().onPress();
 
     expect(initialProps.newGame).toHaveBeenCalled();

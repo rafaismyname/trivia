@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test App renders correctly 1`] = `
+exports[`Test App should render properly 1`] = `
 <ApplicationProvider
   mapping={
     Object {

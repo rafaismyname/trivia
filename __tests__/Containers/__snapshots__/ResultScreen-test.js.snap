@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test ResultScreen container should render properly 1`] = `
+<BaseLayout>
+  <LayoutComponent
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <TextComponent
+      category="h6"
+    >
+      Your Score
+      : 
+      0
+      /
+      0
+    </TextComponent>
+  </LayoutComponent>
+  <LayoutComponent
+    style={
+      Object {
+        "flex": 1,
+        "marginVertical": 25,
+        "width": "90%",
+      }
+    }
+  >
+    <ListComponent
+      data={Array []}
+      renderItem={[Function]}
+    />
+  </LayoutComponent>
+  <ButtonComponent
+    onPress={[MockFunction]}
+  >
+    Back to main screen
+  </ButtonComponent>
+</BaseLayout>
+`;
