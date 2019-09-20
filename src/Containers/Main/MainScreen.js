@@ -6,7 +6,7 @@ import GameActions from '../../Stores/Game/Actions';
 import i18n from '../../Locales/i18n';
 import Style from './MainScreenStyle';
 
-function MainScreen(props) {
+export function MainScreen(props) {
   return (
     <BaseLayout>
       { props.loading && (<Spinner size="giant" />) }

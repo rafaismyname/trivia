@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test MainScreen container renders correctly 1`] = `
+<BaseLayout>
+  <LayoutComponent
+    style={
+      Object {
+        "paddingHorizontal": 25,
+        "textAlign": "center",
+      }
+    }
+  >
+    <TextComponent
+      category="s1"
+    >
+      trivia is a simple "boolean" trivia game
+    </TextComponent>
+    <TextComponent
+      category="s2"
+    >
+      are you good enough to score 100%?
+    </TextComponent>
+    <ButtonComponent
+      size="large"
+      style={
+        Object {
+          "marginTop": 25,
+        }
+      }
+    >
+      Start!
+    </ButtonComponent>
+  </LayoutComponent>
+</BaseLayout>
+`;
+
+exports[`Test MainScreen container renders correctly connected 1`] = `<Connect(MainScreen) />`;
