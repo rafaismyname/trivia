@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test AnswerButton component renders correctly 1`] = `
+<ButtonComponent
+  appearance="outline"
+  onPress={[Function]}
+  size="large"
+  status="primary"
+  style={
+    Object {
+      "marginHorizontal": 25,
+    }
+  }
+>
+  Test
+</ButtonComponent>
+`;
