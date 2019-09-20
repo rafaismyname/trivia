@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test GameScreen container should render properly 1`] = `
+<BaseLayout>
+  <LayoutComponent
+    style={
+      Object {
+        "paddingHorizontal": 25,
+      }
+    }
+  >
+    <TextComponent
+      category="c1"
+    >
+      1
+       of 
+      1
+    </TextComponent>
+    <TextComponent
+      category="c2"
+    >
+      Test Category
+    </TextComponent>
+    <TextComponent
+      category="h4"
+    >
+      Is this a test?
+    </TextComponent>
+  </LayoutComponent>
+  <LayoutComponent
+    style={
+      Object {
+        "alignSelf": "center",
+        "flexDirection": "row",
+        "marginTop": 50,
+        "paddingHorizontal": 25,
+      }
+    }
+  >
+    <AnswerButton
+      callback={[MockFunction]}
+      title="True"
+      value="True"
+    />
+    <AnswerButton
+      callback={[MockFunction]}
+      title="False"
+      value="False"
+    />
+  </LayoutComponent>
+</BaseLayout>
+`;
