@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test BaseLayout component should render properly 1`] = `
+<LayoutComponent
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "marginBottom": 15,
+      "marginTop": 30,
+    }
+  }
+>
+  <LayoutComponent
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 0.1,
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <TextComponent
+      category="h1"
+    >
+      trivia
+    </TextComponent>
+  </LayoutComponent>
+  <LayoutComponent
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 0.85,
+        "justifyContent": "center",
+        "paddingVertical": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text>
+      This is a test!
+    </Text>
+  </LayoutComponent>
+  <LayoutComponent
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 0.05,
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <TextComponent
+      category="c1"
+    >
+      made with ❤️by @rafaismyname
+    </TextComponent>
+  </LayoutComponent>
+</LayoutComponent>
+`;

@@ -51,7 +51,7 @@ const Style = StyleSheet.create({
 });
 
 BaseLayout.propTypes = {
-  children: PropTypes.array.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default BaseLayout;

@@ -1,0 +1,3653 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test App should render properly 1`] = `
+<ApplicationProvider
+  mapping={
+    Object {
+      "$schema": "./node_modules/@eva-design/dss/schema/schema.json",
+      "components": Object {
+        "Avatar": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {},
+              "variantGroups": Object {
+                "shape": Object {
+                  "round": Object {
+                    "roundCoefficient": 0.5,
+                  },
+                  "rounded": Object {
+                    "roundCoefficient": 0.3,
+                  },
+                  "square": Object {
+                    "roundCoefficient": 0,
+                  },
+                },
+                "size": Object {
+                  "giant": Object {
+                    "height": 56,
+                    "width": 56,
+                  },
+                  "large": Object {
+                    "height": 48,
+                    "width": 48,
+                  },
+                  "medium": Object {
+                    "height": 40,
+                    "width": 40,
+                  },
+                  "small": Object {
+                    "height": 32,
+                    "width": 32,
+                  },
+                  "tiny": Object {
+                    "height": 24,
+                    "width": 24,
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "height": Object {
+                "type": "number",
+              },
+              "roundCoefficient": Object {
+                "type": "number",
+              },
+              "width": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {
+              "shape": Object {
+                "round": Object {
+                  "default": true,
+                },
+                "rounded": Object {
+                  "default": false,
+                },
+                "square": Object {
+                  "default": false,
+                },
+              },
+              "size": Object {
+                "giant": Object {
+                  "default": false,
+                },
+                "large": Object {
+                  "default": false,
+                },
+                "medium": Object {
+                  "default": true,
+                },
+                "small": Object {
+                  "default": false,
+                },
+                "tiny": Object {
+                  "default": false,
+                },
+              },
+            },
+          },
+        },
+        "BottomNavigation": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-1",
+                "indicatorBackgroundColor": "color-primary-default",
+                "indicatorHeight": 4,
+                "minHeight": 56,
+                "paddingVertical": 4,
+              },
+            },
+            "noIndicator": Object {
+              "mapping": Object {
+                "indicatorBackgroundColor": "transparent",
+                "indicatorHeight": 0,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+              "noIndicator": Object {
+                "default": false,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "borderTopColor": Object {
+                "type": "string",
+              },
+              "borderTopWidth": Object {
+                "type": "number",
+              },
+              "indicatorBackgroundColor": Object {
+                "type": "string",
+              },
+              "indicatorHeight": Object {
+                "type": "number",
+              },
+              "minHeight": Object {
+                "type": "number",
+              },
+              "paddingVertical": Object {
+                "type": "number",
+              },
+            },
+            "scope": "mobile",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "BottomNavigationTab": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "iconHeight": 24,
+                "iconMarginVertical": 2,
+                "iconTintColor": "color-basic-500",
+                "iconWidth": 24,
+                "state": Object {
+                  "selected": Object {
+                    "iconTintColor": "color-primary-default",
+                    "textColor": "text-primary-color",
+                  },
+                },
+                "textColor": "color-basic-600",
+                "textFontSize": "text-caption-2-font-size",
+                "textFontWeight": "text-caption-2-font-weight",
+                "textLineHeight": "text-caption-2-line-height",
+                "textMarginVertical": 2,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconMarginVertical": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+              "paddingHorizontal": Object {
+                "type": "number",
+              },
+              "paddingVertical": Object {
+                "type": "number",
+              },
+              "textColor": Object {
+                "type": "string",
+              },
+              "textFontSize": Object {
+                "type": "number",
+              },
+              "textFontWeight": Object {
+                "type": "string",
+              },
+              "textLineHeight": Object {
+                "type": "number",
+              },
+              "textMarginVertical": Object {
+                "type": "number",
+              },
+            },
+            "scope": "mobile",
+            "states": Object {
+              "selected": Object {
+                "default": false,
+                "priority": 1,
+                "scope": "mobile",
+              },
+            },
+            "variantGroups": Object {},
+          },
+        },
+        "Button": Object {
+          "appearances": Object {
+            "filled": Object {
+              "mapping": Object {
+                "borderRadius": 4,
+                "borderWidth": 2,
+                "iconMarginHorizontal": 4,
+                "iconTintColor": "text-control-color",
+                "state": Object {
+                  "disabled": Object {
+                    "backgroundColor": "background-basic-color-3",
+                    "borderColor": "border-basic-color-3",
+                    "iconTintColor": "text-disabled-color",
+                    "textColor": "text-disabled-color",
+                  },
+                },
+                "textColor": "text-control-color",
+              },
+              "variantGroups": Object {
+                "size": Object {
+                  "giant": Object {
+                    "iconHeight": 24,
+                    "iconMarginHorizontal": 12,
+                    "iconWidth": 24,
+                    "minHeight": 56,
+                    "minWidth": 56,
+                    "paddingHorizontal": 12,
+                    "paddingVertical": 16,
+                    "textFontSize": 18,
+                    "textLineHeight": 24,
+                    "textMarginHorizontal": 12,
+                  },
+                  "large": Object {
+                    "iconHeight": 20,
+                    "iconMarginHorizontal": 10,
+                    "iconWidth": 20,
+                    "minHeight": 48,
+                    "minWidth": 48,
+                    "paddingHorizontal": 10,
+                    "paddingVertical": 14,
+                    "textFontSize": 16,
+                    "textFontWeight": "bold",
+                    "textLineHeight": 20,
+                    "textMarginHorizontal": 10,
+                  },
+                  "medium": Object {
+                    "iconHeight": 16,
+                    "iconMarginHorizontal": 10,
+                    "iconWidth": 16,
+                    "minHeight": 40,
+                    "minWidth": 40,
+                    "paddingHorizontal": 10,
+                    "paddingVertical": 12,
+                    "textFontSize": 14,
+                    "textFontWeight": "bold",
+                    "textLineHeight": 16,
+                    "textMarginHorizontal": 10,
+                  },
+                  "small": Object {
+                    "iconHeight": 16,
+                    "iconMarginHorizontal": 8,
+                    "iconWidth": 16,
+                    "minHeight": 32,
+                    "minWidth": 32,
+                    "paddingHorizontal": 8,
+                    "paddingVertical": 8,
+                    "textFontSize": 12,
+                    "textFontWeight": "bold",
+                    "textLineHeight": 16,
+                    "textMarginHorizontal": 8,
+                  },
+                  "tiny": Object {
+                    "iconHeight": 12,
+                    "iconMarginHorizontal": 6,
+                    "iconWidth": 12,
+                    "minHeight": 24,
+                    "minWidth": 24,
+                    "paddingHorizontal": 6,
+                    "paddingVertical": 6,
+                    "textFontSize": 10,
+                    "textFontWeight": "bold",
+                    "textLineHeight": 12,
+                    "textMarginHorizontal": 6,
+                  },
+                },
+                "status": Object {
+                  "danger": Object {
+                    "backgroundColor": "color-danger-default",
+                    "borderColor": "color-danger-default",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "color-danger-active",
+                        "borderColor": "color-danger-active",
+                      },
+                    },
+                  },
+                  "info": Object {
+                    "backgroundColor": "color-info-default",
+                    "borderColor": "color-info-default",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "color-info-active",
+                        "borderColor": "color-info-active",
+                      },
+                    },
+                  },
+                  "primary": Object {
+                    "backgroundColor": "color-primary-default",
+                    "borderColor": "color-primary-default",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "color-primary-active",
+                        "borderColor": "color-primary-active",
+                      },
+                    },
+                  },
+                  "success": Object {
+                    "backgroundColor": "color-success-default",
+                    "borderColor": "color-success-default",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "color-success-active",
+                        "borderColor": "color-success-active",
+                      },
+                    },
+                  },
+                  "warning": Object {
+                    "backgroundColor": "color-warning-default",
+                    "borderColor": "color-warning-default",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "color-warning-active",
+                        "borderColor": "color-warning-active",
+                      },
+                    },
+                  },
+                  "white": Object {
+                    "backgroundColor": "color-basic-100",
+                    "borderColor": "color-basic-100",
+                    "iconTintColor": "color-primary-default",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "color-basic-300",
+                        "borderColor": "color-basic-300",
+                        "iconTintColor": "color-primary-active",
+                        "textColor": "color-primary-active",
+                      },
+                      "disabled": Object {
+                        "backgroundColor": "color-basic-300",
+                        "borderColor": "color-basic-300",
+                        "iconTintColor": "color-basic-500",
+                        "textColor": "color-basic-500",
+                      },
+                    },
+                    "textColor": "color-primary-default",
+                  },
+                },
+              },
+            },
+            "ghost": Object {
+              "mapping": Object {
+                "state": Object {
+                  "disabled": Object {
+                    "backgroundColor": "transparent",
+                  },
+                },
+              },
+              "variantGroups": Object {
+                "status": Object {
+                  "danger": Object {
+                    "backgroundColor": "transparent",
+                    "borderColor": "transparent",
+                    "iconTintColor": "text-danger-color",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "iconTintColor": "text-danger-active-color",
+                        "textColor": "text-danger-active-color",
+                      },
+                      "disabled": Object {
+                        "borderColor": "transparent",
+                      },
+                    },
+                    "textColor": "text-danger-color",
+                  },
+                  "info": Object {
+                    "backgroundColor": "transparent",
+                    "borderColor": "transparent",
+                    "iconTintColor": "text-info-color",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "iconTintColor": "text-info-active-color",
+                        "textColor": "text-info-active-color",
+                      },
+                      "disabled": Object {
+                        "borderColor": "transparent",
+                      },
+                    },
+                    "textColor": "text-info-color",
+                  },
+                  "primary": Object {
+                    "backgroundColor": "transparent",
+                    "borderColor": "transparent",
+                    "iconTintColor": "text-primary-color",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "iconTintColor": "text-primary-active-color",
+                        "textColor": "text-primary-active-color",
+                      },
+                      "disabled": Object {
+                        "borderColor": "transparent",
+                      },
+                    },
+                    "textColor": "text-primary-color",
+                  },
+                  "success": Object {
+                    "backgroundColor": "transparent",
+                    "borderColor": "transparent",
+                    "iconTintColor": "text-success-color",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "iconTintColor": "text-success-active-color",
+                        "textColor": "text-success-active-color",
+                      },
+                      "disabled": Object {
+                        "borderColor": "transparent",
+                      },
+                    },
+                    "textColor": "text-success-color",
+                  },
+                  "warning": Object {
+                    "backgroundColor": "transparent",
+                    "borderColor": "transparent",
+                    "iconTintColor": "text-warning-color",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "iconTintColor": "text-warning-active-color",
+                        "textColor": "text-warning-active-color",
+                      },
+                      "disabled": Object {
+                        "borderColor": "transparent",
+                      },
+                    },
+                    "textColor": "text-warning-color",
+                  },
+                  "white": Object {
+                    "backgroundColor": "transparent",
+                    "borderColor": "transparent",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                      },
+                      "disabled": Object {
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                      },
+                    },
+                  },
+                },
+              },
+            },
+            "outline": Object {
+              "mapping": Object {
+                "state": Object {
+                  "disabled": Object {
+                    "backgroundColor": "background-basic-color-2",
+                  },
+                },
+              },
+              "variantGroups": Object {
+                "status": Object {
+                  "danger": Object {
+                    "backgroundColor": "background-basic-color-2",
+                    "iconTintColor": "text-danger-color",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "background-basic-color-2",
+                        "iconTintColor": "text-danger-active-color",
+                        "textColor": "text-danger-active-color",
+                      },
+                    },
+                    "textColor": "text-danger-color",
+                  },
+                  "info": Object {
+                    "backgroundColor": "background-basic-color-2",
+                    "iconTintColor": "text-info-color",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "background-basic-color-2",
+                        "iconTintColor": "text-info-active-color",
+                        "textColor": "text-info-active-color",
+                      },
+                    },
+                    "textColor": "text-info-color",
+                  },
+                  "primary": Object {
+                    "backgroundColor": "background-basic-color-2",
+                    "iconTintColor": "text-primary-color",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "background-basic-color-2",
+                        "iconTintColor": "text-primary-active-color",
+                        "textColor": "text-primary-active-color",
+                      },
+                    },
+                    "textColor": "text-primary-color",
+                  },
+                  "success": Object {
+                    "backgroundColor": "background-basic-color-2",
+                    "iconTintColor": "text-success-color",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "background-basic-color-2",
+                        "iconTintColor": "text-success-active-color",
+                        "textColor": "text-success-active-color",
+                      },
+                    },
+                    "textColor": "text-success-color",
+                  },
+                  "warning": Object {
+                    "backgroundColor": "background-basic-color-2",
+                    "iconTintColor": "text-warning-color",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "background-basic-color-2",
+                        "iconTintColor": "text-warning-active-color",
+                        "textColor": "text-warning-active-color",
+                      },
+                    },
+                    "textColor": "text-warning-color",
+                  },
+                  "white": Object {
+                    "backgroundColor": "background-basic-color-2",
+                    "state": Object {
+                      "active": Object {
+                        "backgroundColor": "background-basic-color-2",
+                        "borderColor": "color-basic-300",
+                      },
+                      "disabled": Object {
+                        "backgroundColor": "background-basic-color-3",
+                        "borderColor": "color-basic-300",
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "filled": Object {
+                "default": true,
+              },
+              "ghost": Object {
+                "default": false,
+              },
+              "outline": Object {
+                "default": false,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "borderColor": Object {
+                "type": "string",
+              },
+              "borderRadius": Object {
+                "type": "number",
+              },
+              "borderWidth": Object {
+                "type": "number",
+              },
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconMarginHorizontal": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+              "minHeight": Object {
+                "type": "number",
+              },
+              "minWidth": Object {
+                "type": "number",
+              },
+              "paddingHorizontal": Object {
+                "type": "number",
+              },
+              "paddingVertical": Object {
+                "type": "number",
+              },
+              "textColor": Object {
+                "type": "string",
+              },
+              "textFontSize": Object {
+                "type": "number",
+              },
+              "textFontWeight": Object {
+                "type": "string",
+              },
+              "textLineHeight": Object {
+                "type": "number",
+              },
+              "textMarginHorizontal": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {
+              "active": Object {
+                "default": false,
+                "priority": 1,
+                "scope": "all",
+              },
+              "disabled": Object {
+                "default": false,
+                "priority": 0,
+                "scope": "all",
+              },
+            },
+            "variantGroups": Object {
+              "size": Object {
+                "giant": Object {
+                  "default": false,
+                },
+                "large": Object {
+                  "default": false,
+                },
+                "medium": Object {
+                  "default": true,
+                },
+                "small": Object {
+                  "default": false,
+                },
+                "tiny": Object {
+                  "default": false,
+                },
+              },
+              "status": Object {
+                "danger": Object {
+                  "default": false,
+                },
+                "info": Object {
+                  "default": false,
+                },
+                "primary": Object {
+                  "default": true,
+                },
+                "success": Object {
+                  "default": false,
+                },
+                "warning": Object {
+                  "default": false,
+                },
+                "white": Object {
+                  "default": false,
+                },
+              },
+            },
+          },
+        },
+        "ButtonGroup": Object {
+          "appearances": Object {
+            "filled": Object {
+              "mapping": Object {
+                "borderColor": "transparent",
+                "borderRadius": 8,
+                "borderWidth": 1,
+                "dividerWidth": 1,
+              },
+              "variantGroups": Object {
+                "size": Object {
+                  "giant": Object {},
+                  "large": Object {},
+                  "medium": Object {},
+                  "small": Object {},
+                  "tiny": Object {},
+                },
+                "status": Object {
+                  "danger": Object {
+                    "dividerBackgroundColor": "border-danger-color-2",
+                  },
+                  "info": Object {
+                    "dividerBackgroundColor": "border-info-color-2",
+                  },
+                  "primary": Object {
+                    "dividerBackgroundColor": "border-primary-color-2",
+                  },
+                  "success": Object {
+                    "dividerBackgroundColor": "border-success-color-2",
+                  },
+                  "warning": Object {
+                    "dividerBackgroundColor": "border-warning-color-2",
+                  },
+                  "white": Object {
+                    "dividerBackgroundColor": "color-basic-200",
+                  },
+                },
+              },
+            },
+            "outline": Object {
+              "mapping": Object {},
+              "variantGroups": Object {
+                "status": Object {
+                  "danger": Object {
+                    "borderColor": "color-danger-default",
+                    "dividerBackgroundColor": "color-danger-default",
+                  },
+                  "info": Object {
+                    "borderColor": "color-info-default",
+                    "dividerBackgroundColor": "color-info-default",
+                  },
+                  "primary": Object {
+                    "borderColor": "color-primary-default",
+                    "dividerBackgroundColor": "color-primary-default",
+                  },
+                  "success": Object {
+                    "borderColor": "color-success-default",
+                    "dividerBackgroundColor": "color-success-default",
+                  },
+                  "warning": Object {
+                    "borderColor": "color-warning-default",
+                    "dividerBackgroundColor": "color-warning-default",
+                  },
+                  "white": Object {
+                    "borderColor": "color-basic-100",
+                    "dividerBackgroundColor": "color-basic-100",
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "filled": Object {
+                "default": true,
+              },
+              "outline": Object {
+                "default": false,
+              },
+            },
+            "parameters": Object {
+              "borderColor": Object {
+                "type": "string",
+              },
+              "borderRadius": Object {
+                "type": "number",
+              },
+              "borderWidth": Object {
+                "type": "number",
+              },
+              "dividerBackgroundColor": Object {
+                "type": "string",
+              },
+              "dividerWidth": Object {
+                "type": "string",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {
+              "size": Object {
+                "giant": Object {
+                  "default": false,
+                },
+                "large": Object {
+                  "default": false,
+                },
+                "medium": Object {
+                  "default": true,
+                },
+                "small": Object {
+                  "default": false,
+                },
+                "tiny": Object {
+                  "default": false,
+                },
+              },
+              "status": Object {
+                "danger": Object {
+                  "default": false,
+                },
+                "info": Object {
+                  "default": false,
+                },
+                "primary": Object {
+                  "default": true,
+                },
+                "success": Object {
+                  "default": false,
+                },
+                "warning": Object {
+                  "default": false,
+                },
+                "white": Object {
+                  "default": false,
+                },
+              },
+            },
+          },
+        },
+        "CheckBox": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-3",
+                "borderColor": "border-basic-color-4",
+                "borderRadius": 3,
+                "borderWidth": 1,
+                "height": 24,
+                "iconHeight": 12,
+                "iconTintColor": "transparent",
+                "iconWidth": 12,
+                "outlineBackgroundColor": "transparent",
+                "outlineBorderRadius": 6,
+                "outlineHeight": 40,
+                "outlineWidth": 40,
+                "state": Object {
+                  "active": Object {
+                    "borderColor": "border-basic-color-4",
+                    "outlineBackgroundColor": "outline-color",
+                  },
+                  "checked": Object {
+                    "backgroundColor": "color-primary-default",
+                    "borderColor": "color-primary-default",
+                    "iconTintColor": "text-control-color",
+                  },
+                  "checked.active": Object {
+                    "borderColor": "color-primary-focus",
+                  },
+                  "disabled": Object {
+                    "backgroundColor": "background-basic-color-2",
+                    "borderColor": "border-basic-color-3",
+                    "textColor": "text-disabled-color",
+                  },
+                  "indeterminate": Object {
+                    "iconBorderRadius": 1.5,
+                    "iconHeight": 3,
+                    "iconTintColor": "text-control-color",
+                  },
+                },
+                "textColor": "text-basic-color",
+                "textFontSize": "text-subtitle-2-font-size",
+                "textFontWeight": "text-subtitle-2-font-weight",
+                "textLineHeight": "text-subtitle-2-line-height",
+                "textMarginHorizontal": 12,
+                "width": 24,
+              },
+              "variantGroups": Object {
+                "status": Object {
+                  "danger": Object {
+                    "backgroundColor": "color-danger-200",
+                    "borderColor": "color-danger-default",
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-danger-focus",
+                      },
+                      "checked": Object {
+                        "backgroundColor": "color-danger-default",
+                        "borderColor": "color-danger-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-danger-focus",
+                      },
+                    },
+                  },
+                  "info": Object {
+                    "backgroundColor": "color-info-200",
+                    "borderColor": "color-info-default",
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "colorInfoFocus",
+                      },
+                      "checked": Object {
+                        "backgroundColor": "color-info-default",
+                        "borderColor": "color-info-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-info-focus",
+                      },
+                    },
+                  },
+                  "primary": Object {
+                    "backgroundColor": "color-primary-200",
+                    "borderColor": "color-primary-default",
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-primary-focus",
+                      },
+                      "checked": Object {
+                        "backgroundColor": "color-primary-default",
+                        "borderColor": "color-primary-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-primary-focus",
+                      },
+                    },
+                  },
+                  "success": Object {
+                    "backgroundColor": "color-success-200",
+                    "borderColor": "color-success-default",
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-success-focus",
+                      },
+                      "checked": Object {
+                        "backgroundColor": "color-success-default",
+                        "borderColor": "color-success-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-success-focus",
+                      },
+                    },
+                  },
+                  "warning": Object {
+                    "backgroundColor": "color-warning-200",
+                    "borderColor": "color-warning-default",
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-warning-focus",
+                      },
+                      "checked": Object {
+                        "backgroundColor": "color-warning-default",
+                        "borderColor": "color-warning-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-warning-focus",
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "borderColor": Object {
+                "type": "string",
+              },
+              "borderRadius": Object {
+                "type": "number",
+              },
+              "borderWidth": Object {
+                "type": "number",
+              },
+              "height": Object {
+                "type": "number",
+              },
+              "iconBorderRadius": Object {
+                "type": "number",
+              },
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+              "outlineBackgroundColor": Object {
+                "type": "string",
+              },
+              "outlineBorderRadius": Object {
+                "type": "number",
+              },
+              "outlineHeight": Object {
+                "type": "number",
+              },
+              "outlineWidth": Object {
+                "type": "number",
+              },
+              "textColor": Object {
+                "type": "string",
+              },
+              "textFontSize": Object {
+                "type": "number",
+              },
+              "textFontWeight": Object {
+                "type": "string",
+              },
+              "textLineHeight": Object {
+                "type": "number",
+              },
+              "textMarginHorizontal": Object {
+                "type": "number",
+              },
+              "width": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {
+              "active": Object {
+                "default": false,
+                "priority": 2,
+                "scope": "all",
+              },
+              "checked": Object {
+                "default": false,
+                "priority": 0,
+                "scope": "all",
+              },
+              "disabled": Object {
+                "default": false,
+                "priority": 1,
+                "scope": "all",
+              },
+              "indeterminate": Object {
+                "default": false,
+                "priority": 3,
+                "scope": "all",
+              },
+            },
+            "variantGroups": Object {
+              "status": Object {
+                "danger": Object {
+                  "default": false,
+                },
+                "info": Object {
+                  "default": false,
+                },
+                "primary": Object {
+                  "default": false,
+                },
+                "success": Object {
+                  "default": false,
+                },
+                "warning": Object {
+                  "default": false,
+                },
+              },
+            },
+          },
+        },
+        "Divider": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-3",
+                "height": 1,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "height": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "Drawer": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-1",
+              },
+            },
+            "noDivider": Object {
+              "mapping": Object {},
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+              "noDivider": Object {
+                "default": false,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+            },
+            "scope": "mobile",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "Input": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-2",
+                "borderColor": "border-basic-color-3",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "captionColor": "text-hint-color",
+                "captionFontSize": "text-caption-1-font-size",
+                "captionFontWeight": "text-caption-1-font-weight",
+                "captionIconHeight": 10,
+                "captionIconMarginRight": 8,
+                "captionIconTintColor": "icon-hint-color",
+                "captionIconWidth": 10,
+                "captionLineHeight": "text-caption-1-line-height",
+                "captionMarginTop": 4,
+                "iconHeight": 24,
+                "iconMarginHorizontal": 8,
+                "iconTintColor": "icon-hint-color",
+                "iconWidth": 24,
+                "labelColor": "text-hint-color",
+                "labelMarginBottom": 4,
+                "paddingHorizontal": 8,
+                "placeholderColor": "text-hint-color",
+                "state": Object {
+                  "disabled": Object {
+                    "borderColor": "border-basic-color-3",
+                    "iconTintColor": "icon-disabled-color",
+                    "placeholderColor": "text-disabled-color",
+                    "textColor": "text-disabled-color",
+                  },
+                  "focused": Object {
+                    "borderColor": "border-primary-color-1",
+                    "iconTintColor": "icon-active-color",
+                    "textColor": "text-basic-color",
+                  },
+                },
+                "textColor": "text-hint-color",
+                "textMarginHorizontal": 8,
+              },
+              "variantGroups": Object {
+                "size": Object {
+                  "large": Object {
+                    "minHeight": 56,
+                    "paddingVertical": 11,
+                    "textFontSize": "text-subtitle-1-font-size",
+                    "textFontWeight": "normal",
+                    "textLineHeight": "text-subtitle-1-line-height",
+                  },
+                  "medium": Object {
+                    "minHeight": 48,
+                    "paddingVertical": 7,
+                    "textFontSize": "text-subtitle-1-font-size",
+                    "textFontWeight": "normal",
+                    "textLineHeight": "text-subtitle-1-line-height",
+                  },
+                  "small": Object {
+                    "minHeight": 40,
+                    "paddingVertical": 3,
+                    "textFontSize": "text-subtitle-2-font-size",
+                    "textFontWeight": "normal",
+                    "textLineHeight": "text-subtitle-2-line-height",
+                  },
+                },
+                "status": Object {
+                  "danger": Object {
+                    "borderColor": "color-danger-default",
+                    "captionColor": "color-danger-default",
+                    "captionIconTintColor": "color-danger-default",
+                    "iconTintColor": "color-danger-default",
+                    "state": Object {
+                      "focused": Object {
+                        "borderColor": "color-danger-focus",
+                        "captionColor": "color-danger-focus",
+                        "captionIconTintColor": "color-danger-focus",
+                        "iconTintColor": "color-danger-focus",
+                      },
+                    },
+                  },
+                  "info": Object {
+                    "borderColor": "color-info-default",
+                    "captionColor": "color-info-default",
+                    "captionIconTintColor": "color-info-default",
+                    "iconTintColor": "color-info-default",
+                    "state": Object {
+                      "focused": Object {
+                        "borderColor": "color-info-focus",
+                        "captionColor": "color-info-focus",
+                        "captionIconTintColor": "color-info-focus",
+                        "iconTintColor": "color-info-focus",
+                      },
+                    },
+                  },
+                  "primary": Object {
+                    "borderColor": "color-primary-default",
+                    "captionColor": "color-primary-default",
+                    "captionIconTintColor": "color-primary-default",
+                    "iconTintColor": "color-primary-default",
+                    "state": Object {
+                      "focused": Object {
+                        "borderColor": "color-primary-focus",
+                        "captionColor": "color-primary-focus",
+                        "captionIconTintColor": "color-primary-focus",
+                        "iconTintColor": "color-primary-focus",
+                      },
+                    },
+                  },
+                  "success": Object {
+                    "borderColor": "color-success-default",
+                    "captionColor": "color-success-default",
+                    "captionIconTintColor": "color-success-default",
+                    "iconTintColor": "color-success-default",
+                    "state": Object {
+                      "focused": Object {
+                        "borderColor": "color-success-focus",
+                        "captionColor": "color-success-focus",
+                        "captionIconTintColor": "color-success-focus",
+                        "iconTintColor": "color-success-focus",
+                      },
+                    },
+                  },
+                  "warning": Object {
+                    "borderColor": "color-warning-default",
+                    "captionColor": "color-warning-default",
+                    "captionIconTintColor": "color-warning-default",
+                    "iconTintColor": "color-warning-default",
+                    "state": Object {
+                      "focused": Object {
+                        "borderColor": "color-warning-focus",
+                        "captionColor": "color-warning-focus",
+                        "captionIconTintColor": "color-warning-focus",
+                        "iconTintColor": "color-warning-focus",
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "borderColor": Object {
+                "type": "string",
+              },
+              "borderRadius": Object {
+                "type": "number",
+              },
+              "borderWidth": Object {
+                "type": "number",
+              },
+              "captionColor": Object {
+                "type": "string",
+              },
+              "captionFontSize": Object {
+                "type": "number",
+              },
+              "captionFontWeight": Object {
+                "type": "string",
+              },
+              "captionIconHeight": Object {
+                "type": "number",
+              },
+              "captionIconMarginRight": Object {
+                "type": "number",
+              },
+              "captionIconTintColor": Object {
+                "type": "string",
+              },
+              "captionIconWidth": Object {
+                "type": "number",
+              },
+              "captionLineHeight": Object {
+                "type": "number",
+              },
+              "captionMarginTop": Object {
+                "type": "number",
+              },
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconMarginHorizontal": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+              "labelColor": Object {
+                "type": "string",
+              },
+              "labelFontSize": Object {
+                "type": "number",
+              },
+              "labelFontWeight": Object {
+                "type": "string",
+              },
+              "labelLineHeight": Object {
+                "type": "number",
+              },
+              "labelMarginBottom": Object {
+                "type": "number",
+              },
+              "minHeight": Object {
+                "type": "number",
+              },
+              "paddingHorizontal": Object {
+                "type": "number",
+              },
+              "paddingVertical": Object {
+                "type": "number",
+              },
+              "placeholderColor": Object {
+                "type": "string",
+              },
+              "textColor": Object {
+                "type": "string",
+              },
+              "textFontSize": Object {
+                "type": "number",
+              },
+              "textFontWeight": Object {
+                "type": "string",
+              },
+              "textLineHeight": Object {
+                "type": "number",
+              },
+              "textMarginHorizontal": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {
+              "disabled": Object {
+                "default": false,
+                "priority": 0,
+                "scope": "all",
+              },
+              "focused": Object {
+                "default": false,
+                "priority": 1,
+                "scope": "all",
+              },
+            },
+            "variantGroups": Object {
+              "size": Object {
+                "large": Object {
+                  "default": false,
+                },
+                "medium": Object {
+                  "default": true,
+                },
+                "small": Object {
+                  "default": false,
+                },
+              },
+              "status": Object {
+                "danger": Object {
+                  "default": false,
+                },
+                "info": Object {
+                  "default": false,
+                },
+                "primary": Object {
+                  "default": false,
+                },
+                "success": Object {
+                  "default": false,
+                },
+                "warning": Object {
+                  "default": false,
+                },
+              },
+            },
+          },
+        },
+        "Layout": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {},
+              "variantGroups": Object {
+                "level": Object {
+                  "1": Object {
+                    "backgroundColor": "background-basic-color-1",
+                  },
+                  "2": Object {
+                    "backgroundColor": "background-basic-color-2",
+                  },
+                  "3": Object {
+                    "backgroundColor": "background-basic-color-3",
+                  },
+                  "4": Object {
+                    "backgroundColor": "background-basic-color-4",
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+            },
+            "scope": "mobile",
+            "states": Object {},
+            "variantGroups": Object {
+              "level": Object {
+                "1": Object {
+                  "default": true,
+                },
+                "2": Object {
+                  "default": false,
+                },
+                "3": Object {
+                  "default": false,
+                },
+                "4": Object {
+                  "default": false,
+                },
+              },
+            },
+          },
+        },
+        "List": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-2",
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "ListItem": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "accessoryMarginHorizontal": 8,
+                "backgroundColor": "background-basic-color-1",
+                "descriptionColor": "text-hint-color",
+                "descriptionFontSize": "text-caption-1-font-size",
+                "descriptionFontWeight": "text-caption-1-font-weight",
+                "descriptionLineHeight": "text-caption-1-line-height",
+                "descriptionMarginHorizontal": 8,
+                "iconHeight": 40,
+                "iconMarginHorizontal": 8,
+                "iconTintColor": "text-hint-color",
+                "iconWidth": 40,
+                "paddingHorizontal": 8,
+                "paddingVertical": 8,
+                "state": Object {
+                  "active": Object {
+                    "backgroundColor": "background-basic-color-3",
+                  },
+                },
+                "titleColor": "text-basic-color",
+                "titleFontSize": "text-subtitle-2-font-size",
+                "titleFontWeight": "text-subtitle-2-font-weight",
+                "titleLineHeight": "text-subtitle-2-line-height",
+                "titleMarginHorizontal": 8,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "accessoryMarginHorizontal": Object {
+                "type": "number",
+              },
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "descriptionColor": Object {
+                "type": "string",
+              },
+              "descriptionFontSize": Object {
+                "type": "number",
+              },
+              "descriptionFontWeight": Object {
+                "type": "string",
+              },
+              "descriptionLineHeight": Object {
+                "type": "number",
+              },
+              "descriptionMarginHorizontal": Object {
+                "type": "number",
+              },
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconMarginHorizontal": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+              "paddingHorizontal": Object {
+                "type": "number",
+              },
+              "paddingVertical": Object {
+                "type": "number",
+              },
+              "titleColor": Object {
+                "type": "string",
+              },
+              "titleFontSize": Object {
+                "type": "number",
+              },
+              "titleFontWeight": Object {
+                "type": "string",
+              },
+              "titleLineHeight": Object {
+                "type": "number",
+              },
+              "titleMarginHorizontal": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {
+              "active": Object {
+                "default": false,
+                "priority": 0,
+                "scope": "all",
+              },
+            },
+            "variantGroups": Object {},
+          },
+        },
+        "Menu": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {},
+            },
+            "noDivider": Object {
+              "mapping": Object {},
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+              "noDivider": Object {
+                "default": false,
+              },
+            },
+            "parameters": Object {},
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "MenuItem": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-1",
+                "iconHeight": 20,
+                "iconMarginHorizontal": 8,
+                "iconTintColor": "text-hint-color",
+                "iconWidth": 20,
+                "indicatorBackgroundColor": "transparent",
+                "indicatorWidth": 0,
+                "paddingHorizontal": 8,
+                "paddingVertical": 12,
+                "state": Object {
+                  "active": Object {
+                    "backgroundColor": "background-basic-color-3",
+                  },
+                  "disabled": Object {
+                    "iconTintColor": "icon-disabled-color",
+                    "titleColor": "text-disabled-color",
+                  },
+                  "selected": Object {
+                    "backgroundColor": "rgba(51, 102, 255, 0.08)",
+                    "iconTintColor": "color-primary-default",
+                    "indicatorBackgroundColor": "color-primary-default",
+                    "indicatorWidth": 4,
+                    "titleColor": "color-primary-default",
+                  },
+                },
+                "titleColor": "text-basic-color",
+                "titleFontSize": "text-subtitle-2-font-size",
+                "titleFontWeight": "text-subtitle-2-font-weight",
+                "titleLineHeight": "text-subtitle-2-line-height",
+                "titleMarginHorizontal": 8,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconMarginHorizontal": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+              "indicatorBackgroundColor": Object {
+                "type": "string",
+              },
+              "indicatorWidth": Object {
+                "type": "number",
+              },
+              "paddingHorizontal": Object {
+                "type": "number",
+              },
+              "paddingVertical": Object {
+                "type": "number",
+              },
+              "titleColor": Object {
+                "type": "string",
+              },
+              "titleFontSize": Object {
+                "type": "number",
+              },
+              "titleFontWeight": Object {
+                "type": "string",
+              },
+              "titleLineHeight": Object {
+                "type": "number",
+              },
+              "titleMarginHorizontal": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {
+              "active": Object {
+                "default": false,
+                "priority": 2,
+                "scope": "all",
+              },
+              "disabled": Object {
+                "default": false,
+                "priority": 0,
+                "scope": "all",
+              },
+              "selected": Object {
+                "default": false,
+                "priority": 1,
+                "scope": "all",
+              },
+            },
+            "variantGroups": Object {},
+          },
+        },
+        "OverflowMenu": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "borderRadius": 12,
+                "indicatorBackgroundColor": "transparent",
+                "maxHeight": 256,
+              },
+            },
+            "noDivider": Object {
+              "mapping": Object {},
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+              "noDivider": Object {
+                "default": false,
+              },
+            },
+            "parameters": Object {
+              "borderRadius": Object {
+                "type": "number",
+              },
+              "indicatorBackgroundColor": Object {
+                "type": "string",
+              },
+              "maxHeight": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "Popover": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-1",
+                "borderRadius": 8,
+                "indicatorBackgroundColor": "background-basic-color-1",
+                "indicatorHeight": 6,
+                "indicatorWidth": 6,
+                "maxWidth": 256,
+                "minHeight": 32,
+                "minWidth": 56,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "borderRadius": Object {
+                "type": "number",
+              },
+              "indicatorBackgroundColor": Object {
+                "type": "string",
+              },
+              "indicatorHeight": Object {
+                "type": "number",
+              },
+              "indicatorWidth": Object {
+                "type": "number",
+              },
+              "maxWidth": Object {
+                "type": "number",
+              },
+              "minHeight": Object {
+                "type": "number",
+              },
+              "minWidth": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "Radio": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-3",
+                "borderColor": "border-basic-color-4",
+                "borderRadius": 12,
+                "borderWidth": 1,
+                "height": 24,
+                "iconBorderRadius": 8,
+                "iconHeight": 16,
+                "iconTintColor": "transparent",
+                "iconWidth": 16,
+                "outlineBackgroundColor": "transparent",
+                "outlineBorderRadius": 20,
+                "outlineHeight": 40,
+                "outlineWidth": 40,
+                "state": Object {
+                  "active": Object {
+                    "borderColor": "border-basic-color-4",
+                    "outlineBackgroundColor": "outline-color",
+                  },
+                  "checked": Object {
+                    "borderColor": "color-primary-default",
+                    "iconTintColor": "color-primary-default",
+                  },
+                  "checked.active": Object {
+                    "borderColor": "color-primary-focus",
+                  },
+                  "checked.disabled": Object {
+                    "iconTintColor": "background-basic-color-4",
+                    "textColor": "text-disabled-color",
+                  },
+                  "disabled": Object {
+                    "backgroundColor": "background-basic-color-2",
+                    "borderColor": "border-basic-color-3",
+                    "textColor": "text-disabled-color",
+                  },
+                },
+                "textColor": "text-basic-color",
+                "textFontSize": "text-subtitle-2-font-size",
+                "textFontWeight": "text-subtitle-2-font-weight",
+                "textLineHeight": "text-subtitle-2-line-height",
+                "textMarginHorizontal": 12,
+                "width": 24,
+              },
+              "variantGroups": Object {
+                "status": Object {
+                  "danger": Object {
+                    "borderColor": "color-danger-default",
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-danger-active",
+                      },
+                      "checked": Object {
+                        "borderColor": "color-danger-default",
+                        "iconTintColor": "color-danger-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-danger-focus",
+                      },
+                    },
+                  },
+                  "info": Object {
+                    "borderColor": "color-info-default",
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-info-active",
+                      },
+                      "checked": Object {
+                        "borderColor": "color-info-default",
+                        "iconTintColor": "color-info-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-info-focus",
+                      },
+                    },
+                  },
+                  "primary": Object {
+                    "borderColor": "color-primary-default",
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-primary-active",
+                      },
+                      "checked": Object {
+                        "borderColor": "color-primary-default",
+                        "iconTintColor": "color-primary-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-primary-focus",
+                      },
+                    },
+                  },
+                  "success": Object {
+                    "borderColor": "color-success-default",
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-success-active",
+                      },
+                      "checked": Object {
+                        "borderColor": "color-success-default",
+                        "iconTintColor": "color-success-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-success-focus",
+                      },
+                    },
+                  },
+                  "warning": Object {
+                    "borderColor": "color-warning-default",
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-warning-active",
+                      },
+                      "checked": Object {
+                        "borderColor": "color-warning-default",
+                        "iconTintColor": "color-warning-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-warning-focus",
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "borderColor": Object {
+                "type": "string",
+              },
+              "borderRadius": Object {
+                "type": "number",
+              },
+              "borderWidth": Object {
+                "type": "number",
+              },
+              "height": Object {
+                "type": "number",
+              },
+              "iconBorderRadius": Object {
+                "type": "number",
+              },
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+              "outlineBackgroundColor": Object {
+                "type": "string",
+              },
+              "outlineBorderRadius": Object {
+                "type": "number",
+              },
+              "outlineHeight": Object {
+                "type": "number",
+              },
+              "outlineWidth": Object {
+                "type": "number",
+              },
+              "textColor": Object {
+                "type": "string",
+              },
+              "textFontSize": Object {
+                "type": "number",
+              },
+              "textFontWeight": Object {
+                "type": "string",
+              },
+              "textLineHeight": Object {
+                "type": "number",
+              },
+              "textMarginHorizontal": Object {
+                "type": "number",
+              },
+              "width": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {
+              "active": Object {
+                "default": false,
+                "priority": 2,
+                "scope": "all",
+              },
+              "checked": Object {
+                "default": false,
+                "priority": 0,
+                "scope": "all",
+              },
+              "disabled": Object {
+                "default": false,
+                "priority": 1,
+                "scope": "all",
+              },
+            },
+            "variantGroups": Object {
+              "status": Object {
+                "danger": Object {
+                  "default": false,
+                },
+                "info": Object {
+                  "default": false,
+                },
+                "primary": Object {
+                  "default": false,
+                },
+                "success": Object {
+                  "default": false,
+                },
+                "warning": Object {
+                  "default": false,
+                },
+              },
+            },
+          },
+        },
+        "RadioGroup": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "padding": 0,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "padding": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "Select": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-2",
+                "borderColor": "border-basic-color-3",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "iconHeight": 24,
+                "iconMarginHorizontal": 8,
+                "iconTintColor": "text-hint-color",
+                "iconWidth": 24,
+                "labelColor": "text-hint-color",
+                "labelMarginBottom": 4,
+                "minHeight": 48,
+                "optionsListBorderColor": "border-basic-color-4",
+                "optionsListBorderRadius": 4,
+                "optionsListBorderWidth": 1,
+                "optionsListMaxHeight": 220,
+                "outlineBackgroundColor": "transparent",
+                "outlineBorderRadius": 4,
+                "outlinePadding": 4,
+                "paddingHorizontal": 8,
+                "paddingVertical": 7,
+                "placeholderColor": "text-hint-color",
+                "placeholderFontSize": "text-subtitle-1-font-size",
+                "placeholderFontWeight": "text-paragraph-1-font-weight",
+                "placeholderLineHeight": "text-paragraph-1-line-height",
+                "placeholderMarginHorizontal": 8,
+                "state": Object {
+                  "active": Object {
+                    "backgroundColor": "background-basic-color-1",
+                    "iconTintColor": "border-alternative-color-1",
+                    "outlineBackgroundColor": "outline-color",
+                  },
+                  "disabled": Object {
+                    "borderColor": "border-basic-color-4",
+                    "iconTintColor": "icon-disabled-color",
+                    "placeholderColor": "text-disabled-color",
+                    "textColor": "text-disabled-color",
+                  },
+                },
+                "textColor": "border-alternative-color-1",
+                "textFontSize": "text-subtitle-1-font-size",
+                "textFontWeight": "text-subtitle-1-font-weight",
+                "textLineHeight": "text-subtitle-1-line-height",
+                "textMarginHorizontal": 8,
+              },
+              "variantGroups": Object {
+                "status": Object {
+                  "danger": Object {
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-danger-default",
+                      },
+                    },
+                  },
+                  "info": Object {
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-info-default",
+                      },
+                    },
+                  },
+                  "primary": Object {
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-primary-default",
+                      },
+                    },
+                  },
+                  "success": Object {
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-success-default",
+                      },
+                    },
+                  },
+                  "warning": Object {
+                    "state": Object {
+                      "active": Object {
+                        "borderColor": "color-warning-default",
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "borderColor": Object {
+                "type": "string",
+              },
+              "borderRadius": Object {
+                "type": "number",
+              },
+              "borderWidth": Object {
+                "type": "number",
+              },
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconMarginHorizontal": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+              "labelColor": Object {
+                "type": "string",
+              },
+              "labelFontSize": Object {
+                "type": "number",
+              },
+              "labelFontWeight": Object {
+                "type": "string",
+              },
+              "labelLineHeight": Object {
+                "type": "number",
+              },
+              "labelMarginBottom": Object {
+                "type": "number",
+              },
+              "minHeight": Object {
+                "type": "number",
+              },
+              "minWidth": Object {
+                "type": "number",
+              },
+              "optionsListBorderColor": Object {
+                "type": "string",
+              },
+              "optionsListBorderRadius": Object {
+                "type": "number",
+              },
+              "optionsListBorderWidth": Object {
+                "type": "number",
+              },
+              "optionsListMaxHeight": Object {
+                "type": "number",
+              },
+              "outlineBackgroundColor": Object {
+                "type": "string",
+              },
+              "outlineBorderRadius": Object {
+                "type": "number",
+              },
+              "outlinePadding": Object {
+                "type": "number",
+              },
+              "paddingHorizontal": Object {
+                "type": "number",
+              },
+              "paddingVertical": Object {
+                "type": "number",
+              },
+              "placeholderColor": Object {
+                "type": "string",
+              },
+              "placeholderFontSize": Object {
+                "type": "number",
+              },
+              "placeholderFontWeight": Object {
+                "type": "string",
+              },
+              "placeholderLineHeight": Object {
+                "type": "number",
+              },
+              "placeholderMarginHorizontal": Object {
+                "type": "number",
+              },
+              "textColor": Object {
+                "type": "string",
+              },
+              "textFontSize": Object {
+                "type": "number",
+              },
+              "textFontWeight": Object {
+                "type": "string",
+              },
+              "textLineHeight": Object {
+                "type": "number",
+              },
+              "textMarginHorizontal": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {
+              "active": Object {
+                "default": false,
+                "priority": 1,
+                "scope": "all",
+              },
+              "disabled": Object {
+                "default": false,
+                "priority": 0,
+                "scope": "all",
+              },
+            },
+            "variantGroups": Object {
+              "status": Object {
+                "danger": Object {
+                  "default": false,
+                },
+                "info": Object {
+                  "default": false,
+                },
+                "primary": Object {
+                  "default": true,
+                },
+                "success": Object {
+                  "default": false,
+                },
+                "warning": Object {
+                  "default": false,
+                },
+              },
+            },
+          },
+        },
+        "SelectGroupOption": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-1",
+                "itemPaddingHorizontal": 20,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "itemPaddingHorizontal": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "SelectOption": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-1",
+                "multiSelectBackgroundColor": "background-basic-color-1",
+                "multiSelectTextColor": "background-alternative-color-1",
+                "paddingHorizontal": 8,
+                "paddingVertical": 8,
+                "state": Object {
+                  "active": Object {
+                    "backgroundColor": "background-basic-color-2",
+                  },
+                  "disabled": Object {
+                    "multiSelectTextColor": "text-hint-color",
+                    "textColor": "text-hint-color",
+                  },
+                  "selected": Object {
+                    "backgroundColor": "color-primary-default",
+                    "textColor": "text-alternate-color",
+                  },
+                },
+                "textColor": "background-alternative-color-1",
+                "textFontSize": "text-subtitle-1-font-size",
+                "textFontWeight": "text-subtitle-1-font-weight",
+                "textLineHeight": "text-subtitle-2-line-height",
+                "textMarginHorizontal": 8,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "multiSelectBackgroundColor": Object {
+                "type": "string",
+              },
+              "multiSelectTextColor": Object {
+                "type": "string",
+              },
+              "paddingHorizontal": Object {
+                "type": "number",
+              },
+              "paddingVertical": Object {
+                "type": "number",
+              },
+              "textColor": Object {
+                "type": "string",
+              },
+              "textFontSize": Object {
+                "type": "number",
+              },
+              "textFontWeight": Object {
+                "type": "string",
+              },
+              "textLineHeight": Object {
+                "type": "number",
+              },
+              "textMarginHorizontal": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {
+              "active": Object {
+                "default": false,
+                "priority": 1,
+                "scope": "all",
+              },
+              "disabled": Object {
+                "default": false,
+                "priority": 0,
+                "scope": "all",
+              },
+              "selected": Object {
+                "default": false,
+                "priority": 2,
+                "scope": "all",
+              },
+            },
+            "variantGroups": Object {},
+          },
+        },
+        "Spinner": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {},
+              "variantGroups": Object {
+                "size": Object {
+                  "giant": Object {
+                    "borderRadius": 16,
+                    "borderWidth": 4.5,
+                    "height": 32,
+                    "width": 32,
+                  },
+                  "large": Object {
+                    "borderRadius": 14,
+                    "borderWidth": 3.9,
+                    "height": 28,
+                    "width": 28,
+                  },
+                  "medium": Object {
+                    "borderRadius": 12,
+                    "borderWidth": 3.4,
+                    "height": 24,
+                    "width": 24,
+                  },
+                  "small": Object {
+                    "borderRadius": 10,
+                    "borderWidth": 2.8,
+                    "height": 20,
+                    "width": 20,
+                  },
+                  "tiny": Object {
+                    "borderRadius": 8,
+                    "borderWidth": 2.3,
+                    "height": 16,
+                    "width": 16,
+                  },
+                },
+                "status": Object {
+                  "alternative": Object {
+                    "borderColor": "border-alternative-color-1",
+                  },
+                  "danger": Object {
+                    "borderColor": "color-danger-default",
+                  },
+                  "info": Object {
+                    "borderColor": "color-info-default",
+                  },
+                  "primary": Object {
+                    "borderColor": "color-primary-default",
+                  },
+                  "success": Object {
+                    "borderColor": "color-success-default",
+                  },
+                  "warning": Object {
+                    "borderColor": "color-warning-default",
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "borderColor": Object {
+                "type": "string",
+              },
+              "borderRadius": Object {
+                "type": "number",
+              },
+              "borderWidth": Object {
+                "type": "number",
+              },
+              "height": Object {
+                "type": "number",
+              },
+              "width": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {
+              "size": Object {
+                "giant": Object {
+                  "default": false,
+                },
+                "large": Object {
+                  "default": false,
+                },
+                "medium": Object {
+                  "default": true,
+                },
+                "small": Object {
+                  "default": false,
+                },
+                "tiny": Object {
+                  "default": false,
+                },
+              },
+              "status": Object {
+                "alternative": Object {
+                  "default": false,
+                },
+                "danger": Object {
+                  "default": false,
+                },
+                "info": Object {
+                  "default": false,
+                },
+                "primary": Object {
+                  "default": true,
+                },
+                "success": Object {
+                  "default": false,
+                },
+                "warning": Object {
+                  "default": false,
+                },
+              },
+            },
+          },
+        },
+        "SubMenu": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "subItemsPaddingHorizontal": 16,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "subItemsPaddingHorizontal": Object {
+                "type": "string",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "Tab": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "iconHeight": 24,
+                "iconMarginVertical": 2,
+                "iconTintColor": "text-hint-color",
+                "iconWidth": 24,
+                "state": Object {
+                  "selected": Object {
+                    "iconTintColor": "text-primary-color",
+                    "textColor": "text-primary-color",
+                  },
+                },
+                "textColor": "text-hint-color",
+                "textFontSize": 14,
+                "textFontWeight": "bold",
+                "textLineHeight": 16,
+                "textMarginVertical": 2,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconMarginVertical": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+              "textColor": Object {
+                "type": "string",
+              },
+              "textFontSize": Object {
+                "type": "number",
+              },
+              "textFontWeight": Object {
+                "type": "number",
+              },
+              "textLineHeight": Object {
+                "type": "number",
+              },
+              "textMarginVertical": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {
+              "selected": Object {
+                "default": false,
+                "priority": 0,
+                "scope": "all",
+              },
+            },
+            "variantGroups": Object {},
+          },
+        },
+        "TabBar": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-1",
+                "indicatorBackgroundColor": "color-primary-default",
+                "indicatorBorderRadius": 2,
+                "indicatorHeight": 4,
+                "paddingVertical": 4,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "indicatorBackgroundColor": Object {
+                "type": "string",
+              },
+              "indicatorBorderRadius": Object {
+                "type": "number",
+              },
+              "indicatorHeight": Object {
+                "type": "number",
+              },
+              "paddingVertical": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "Text": Object {
+          "appearances": Object {
+            "alternative": Object {
+              "mapping": Object {
+                "color": "text-alternate-color",
+              },
+            },
+            "default": Object {
+              "mapping": Object {
+                "color": "text-basic-color",
+              },
+              "variantGroups": Object {
+                "category": Object {
+                  "c1": Object {
+                    "fontSize": "text-caption-1-font-size",
+                    "fontWeight": "text-caption-1-font-weight",
+                    "lineHeight": "text-caption-1-line-height",
+                  },
+                  "c2": Object {
+                    "fontSize": "text-caption-2-font-size",
+                    "fontWeight": "text-caption-2-font-weight",
+                    "lineHeight": "text-caption-2-line-height",
+                  },
+                  "h1": Object {
+                    "fontSize": "text-heading-1-font-size",
+                    "fontWeight": "text-heading-1-font-weight",
+                    "lineHeight": "text-heading-1-line-height",
+                  },
+                  "h2": Object {
+                    "fontSize": "text-heading-2-font-size",
+                    "fontWeight": "text-heading-2-font-weight",
+                    "lineHeight": "text-heading-2-line-height",
+                  },
+                  "h3": Object {
+                    "fontSize": "text-heading-3-font-size",
+                    "fontWeight": "text-heading-4-font-weight",
+                    "lineHeight": "text-heading-3-line-height",
+                  },
+                  "h4": Object {
+                    "fontSize": "text-heading-4-font-size",
+                    "fontWeight": "text-heading-4-font-weight",
+                    "lineHeight": "text-heading-4-line-height",
+                  },
+                  "h5": Object {
+                    "fontSize": "text-heading-5-font-size",
+                    "fontWeight": "text-heading-5-font-weight",
+                    "lineHeight": "text-heading-5-line-height",
+                  },
+                  "h6": Object {
+                    "fontSize": "text-heading-6-font-size",
+                    "fontWeight": "text-heading-6-font-weight",
+                    "lineHeight": "text-heading-6-line-height",
+                  },
+                  "label": Object {
+                    "fontSize": "text-label-font-size",
+                    "fontWeight": "text-label-font-weight",
+                    "lineHeight": "text-label-line-height",
+                  },
+                  "p1": Object {
+                    "fontSize": "text-paragraph-1-font-size",
+                    "fontWeight": "text-paragraph-1-font-weight",
+                    "lineHeight": "text-paragraph-1-line-height",
+                  },
+                  "p2": Object {
+                    "fontSize": "text-paragraph-2-font-size",
+                    "fontWeight": "text-paragraph-2-font-weight",
+                    "lineHeight": "text-paragraph-2-line-height",
+                  },
+                  "s1": Object {
+                    "fontSize": "text-subtitle-1-font-size",
+                    "fontWeight": "text-subtitle-1-font-weight",
+                    "lineHeight": "text-subtitle-1-line-height",
+                  },
+                  "s2": Object {
+                    "fontSize": "text-subtitle-2-font-size",
+                    "fontWeight": "text-subtitle-2-font-weight",
+                    "lineHeight": "text-subtitle-2-line-height",
+                  },
+                },
+                "status": Object {
+                  "danger": Object {
+                    "color": "text-danger-color",
+                  },
+                  "info": Object {
+                    "color": "text-info-color",
+                  },
+                  "primary": Object {
+                    "color": "text-primary-color",
+                  },
+                  "success": Object {
+                    "color": "text-success-color",
+                  },
+                  "warning": Object {
+                    "color": "text-warning-color",
+                  },
+                },
+              },
+            },
+            "hint": Object {
+              "mapping": Object {
+                "color": "text-hint-color",
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "alternative": Object {
+                "default": false,
+              },
+              "default": Object {
+                "default": true,
+              },
+              "hint": Object {
+                "default": false,
+              },
+            },
+            "parameters": Object {
+              "color": Object {
+                "type": "string",
+              },
+              "fontSize": Object {
+                "type": "number",
+              },
+              "fontWeight": Object {
+                "type": "string",
+              },
+              "lineHeight": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {
+              "category": Object {
+                "c1": Object {
+                  "default": false,
+                },
+                "c2": Object {
+                  "default": false,
+                },
+                "h1": Object {
+                  "default": false,
+                },
+                "h2": Object {
+                  "default": false,
+                },
+                "h3": Object {
+                  "default": false,
+                },
+                "h4": Object {
+                  "default": false,
+                },
+                "h5": Object {
+                  "default": false,
+                },
+                "h6": Object {
+                  "default": false,
+                },
+                "label": Object {
+                  "default": false,
+                },
+                "p1": Object {
+                  "default": true,
+                },
+                "p2": Object {
+                  "default": false,
+                },
+                "s1": Object {
+                  "default": false,
+                },
+                "s2": Object {
+                  "default": false,
+                },
+              },
+              "status": Object {
+                "danger": Object {
+                  "default": false,
+                },
+                "info": Object {
+                  "default": false,
+                },
+                "primary": Object {
+                  "default": false,
+                },
+                "success": Object {
+                  "default": false,
+                },
+                "warning": Object {
+                  "default": false,
+                },
+              },
+            },
+          },
+        },
+        "Toggle": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-2",
+                "borderColor": "border-basic-color-3",
+                "outlineBackgroundColor": "transparent",
+                "state": Object {
+                  "active": Object {
+                    "borderColor": "border-basic-color-4",
+                    "outlineBackgroundColor": "outline-color",
+                  },
+                  "checked.disabled": Object {
+                    "iconTintColor": "background-basic-color-4",
+                  },
+                  "disabled": Object {
+                    "backgroundColor": "background-basic-color-3",
+                    "borderColor": "border-basic-color-4",
+                  },
+                },
+                "thumbBackgroundColor": "background-basic-color-1",
+              },
+              "variantGroups": Object {
+                "size": Object {
+                  "giant": Object {
+                    "borderRadius": 24,
+                    "borderWidth": 2,
+                    "height": 48,
+                    "iconHeight": 22,
+                    "iconWidth": 22,
+                    "offsetValue": 28,
+                    "outlineBorderRadius": 30,
+                    "outlineHeight": 60,
+                    "outlineWidth": 88,
+                    "thumbBorderRadius": 22,
+                    "thumbHeight": 44,
+                    "thumbWidth": 44,
+                    "width": 76,
+                  },
+                  "large": Object {
+                    "borderRadius": 20,
+                    "borderWidth": 2,
+                    "height": 40,
+                    "iconHeight": 18,
+                    "iconWidth": 18,
+                    "offsetValue": 24,
+                    "outlineBorderRadius": 26,
+                    "outlineHeight": 52,
+                    "outlineWidth": 76,
+                    "thumbBorderRadius": 18,
+                    "thumbHeight": 36,
+                    "thumbWidth": 36,
+                    "width": 64,
+                  },
+                  "medium": Object {
+                    "borderRadius": 16,
+                    "borderWidth": 1.5,
+                    "height": 32,
+                    "iconHeight": 15,
+                    "iconWidth": 15,
+                    "offsetValue": 20,
+                    "outlineBorderRadius": 22,
+                    "outlineHeight": 44,
+                    "outlineWidth": 64,
+                    "thumbBorderRadius": 15,
+                    "thumbHeight": 30,
+                    "thumbWidth": 30,
+                    "width": 52,
+                  },
+                  "small": Object {
+                    "borderRadius": 12,
+                    "borderWidth": 1.5,
+                    "height": 24,
+                    "iconHeight": 11,
+                    "iconWidth": 11,
+                    "offsetValue": 16,
+                    "outlineBorderRadius": 18,
+                    "outlineHeight": 36,
+                    "outlineWidth": 50,
+                    "thumbBorderRadius": 11,
+                    "thumbHeight": 22,
+                    "thumbWidth": 22,
+                    "width": 38,
+                  },
+                  "tiny": Object {
+                    "borderRadius": 10,
+                    "borderWidth": 1.5,
+                    "height": 20,
+                    "iconHeight": 9,
+                    "iconWidth": 9,
+                    "offsetValue": 12,
+                    "outlineBorderRadius": 16,
+                    "outlineHeight": 32,
+                    "outlineWidth": 44,
+                    "thumbBorderRadius": 9,
+                    "thumbHeight": 18,
+                    "thumbWidth": 18,
+                    "width": 32,
+                  },
+                },
+                "status": Object {
+                  "danger": Object {
+                    "iconTintColor": "color-danger-default",
+                    "state": Object {
+                      "checked": Object {
+                        "backgroundColor": "color-danger-default",
+                        "borderColor": "color-danger-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-danger-active",
+                      },
+                    },
+                  },
+                  "info": Object {
+                    "iconTintColor": "color-info-default",
+                    "state": Object {
+                      "checked": Object {
+                        "backgroundColor": "color-info-default",
+                        "borderColor": "color-info-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-info-active",
+                      },
+                    },
+                  },
+                  "primary": Object {
+                    "iconTintColor": "color-primary-default",
+                    "state": Object {
+                      "checked": Object {
+                        "backgroundColor": "color-primary-default",
+                        "borderColor": "color-primary-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-primary-active",
+                      },
+                    },
+                  },
+                  "success": Object {
+                    "iconTintColor": "color-success-default",
+                    "state": Object {
+                      "checked": Object {
+                        "backgroundColor": "color-success-default",
+                        "borderColor": "color-success-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-success-active",
+                      },
+                    },
+                  },
+                  "warning": Object {
+                    "iconTintColor": "color-warning-default",
+                    "state": Object {
+                      "checked": Object {
+                        "backgroundColor": "color-warning-default",
+                        "borderColor": "color-warning-default",
+                      },
+                      "checked.active": Object {
+                        "borderColor": "color-warning-active",
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "borderColor": Object {
+                "type": "string",
+              },
+              "borderRadius": Object {
+                "type": "number",
+              },
+              "borderWidth": Object {
+                "type": "number",
+              },
+              "height": Object {
+                "type": "number",
+              },
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+              "offsetValue": Object {
+                "type": "number",
+              },
+              "outlineBackgroundColor": Object {
+                "type": "string",
+              },
+              "outlineBorderRadius": Object {
+                "type": "number",
+              },
+              "outlineHeight": Object {
+                "type": "number",
+              },
+              "outlineWidth": Object {
+                "type": "number",
+              },
+              "thumbBackgroundColor": Object {
+                "type": "string",
+              },
+              "thumbBorderRadius": Object {
+                "type": "number",
+              },
+              "thumbHeight": Object {
+                "type": "number",
+              },
+              "thumbWidth": Object {
+                "type": "number",
+              },
+              "width": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {
+              "active": Object {
+                "default": false,
+                "priority": 1,
+                "scope": "all",
+              },
+              "checked": Object {
+                "default": false,
+                "priority": 0,
+                "scope": "all",
+              },
+              "disabled": Object {
+                "default": false,
+                "priority": 1,
+                "scope": "all",
+              },
+            },
+            "variantGroups": Object {
+              "size": Object {
+                "giant": Object {
+                  "default": false,
+                },
+                "large": Object {
+                  "default": false,
+                },
+                "medium": Object {
+                  "default": true,
+                },
+                "small": Object {
+                  "default": false,
+                },
+                "tiny": Object {
+                  "default": false,
+                },
+              },
+              "status": Object {
+                "danger": Object {
+                  "default": false,
+                },
+                "info": Object {
+                  "default": false,
+                },
+                "primary": Object {
+                  "default": true,
+                },
+                "success": Object {
+                  "default": false,
+                },
+                "warning": Object {
+                  "default": false,
+                },
+              },
+            },
+          },
+        },
+        "Tooltip": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-alternative-color-3",
+                "borderRadius": 4,
+                "iconHeight": 16,
+                "iconMarginHorizontal": 4,
+                "iconTintColor": "text-alternate-color",
+                "iconWidth": 16,
+                "indicatorBackgroundColor": "background-alternative-color-3",
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+                "textColor": "text-alternate-color",
+                "textFontSize": "text-caption-2-font-size",
+                "textFontWeight": "text-caption-2-font-weight",
+                "textLineHeight": "text-caption-2-line-height",
+                "textMarginHorizontal": 4,
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "borderRadius": Object {
+                "type": "number",
+              },
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconMarginHorizontal": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+              "indicatorBackgroundColor": Object {
+                "type": "string",
+              },
+              "paddingHorizontal": Object {
+                "type": "number",
+              },
+              "paddingVertical": Object {
+                "type": "number",
+              },
+              "textColor": Object {
+                "type": "string",
+              },
+              "textFontSize": Object {
+                "type": "number",
+              },
+              "textFontWeight": Object {
+                "type": "number",
+              },
+              "textLineHeight": Object {
+                "type": "number",
+              },
+              "textMarginHorizontal": Object {
+                "type": "number",
+              },
+            },
+            "scope": "all",
+            "states": Object {},
+            "variantGroups": Object {},
+          },
+        },
+        "TopNavigation": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "backgroundColor": "background-basic-color-1",
+                "minHeight": 56,
+                "paddingHorizontal": 8,
+                "paddingVertical": 8,
+                "subtitleColor": "text-hint-color",
+                "subtitleFontSize": "text-caption-1-font-size",
+                "subtitleFontWeight": "text-caption-1-font-weight",
+                "subtitleLineHeight": "text-caption-1-line-height",
+                "titleColor": "text-basic-color",
+                "titleFontSize": "text-subtitle-1-font-size",
+                "titleFontWeight": "text-subtitle-1-font-weight",
+                "titleLineHeight": "text-subtitle-1-line-height",
+              },
+              "variantGroups": Object {
+                "alignment": Object {
+                  "center": Object {
+                    "subtitleTextAlign": "center",
+                    "titleTextAlign": "center",
+                  },
+                  "start": Object {
+                    "subtitleTextAlign": "left",
+                    "titleTextAlign": "left",
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "backgroundColor": Object {
+                "type": "string",
+              },
+              "minHeight": Object {
+                "type": "number",
+              },
+              "paddingHorizontal": Object {
+                "type": "number",
+              },
+              "paddingVertical": Object {
+                "type": "number",
+              },
+              "subtitleColor": Object {
+                "type": "string",
+              },
+              "subtitleFontSize": Object {
+                "type": "number",
+              },
+              "subtitleFontWeight": Object {
+                "type": "string",
+              },
+              "subtitleLineHeight": Object {
+                "type": "number",
+              },
+              "subtitleTextAlign": Object {
+                "type": "string",
+              },
+              "titleColor": Object {
+                "type": "string",
+              },
+              "titleFontSize": Object {
+                "type": "number",
+              },
+              "titleFontWeight": Object {
+                "type": "string",
+              },
+              "titleLineHeight": Object {
+                "type": "number",
+              },
+              "titleTextAlign": Object {
+                "type": "string",
+              },
+            },
+            "scope": "mobile",
+            "states": Object {},
+            "variantGroups": Object {
+              "alignment": Object {
+                "center": Object {
+                  "default": false,
+                },
+                "start": Object {
+                  "default": true,
+                },
+              },
+            },
+          },
+        },
+        "TopNavigationAction": Object {
+          "appearances": Object {
+            "default": Object {
+              "mapping": Object {
+                "iconHeight": 24,
+                "iconMarginHorizontal": 8,
+                "iconTintColor": "background-alternative-color-1",
+                "iconWidth": 24,
+                "state": Object {
+                  "active": Object {
+                    "iconTintColor": "background-alternative-color-3",
+                  },
+                },
+              },
+            },
+          },
+          "meta": Object {
+            "appearances": Object {
+              "default": Object {
+                "default": true,
+              },
+            },
+            "parameters": Object {
+              "iconHeight": Object {
+                "type": "number",
+              },
+              "iconMarginHorizontal": Object {
+                "type": "number",
+              },
+              "iconTintColor": Object {
+                "type": "string",
+              },
+              "iconWidth": Object {
+                "type": "number",
+              },
+            },
+            "scope": "mobile",
+            "states": Object {
+              "active": Object {
+                "default": false,
+                "priority": 0,
+                "scope": "all",
+              },
+            },
+            "variantGroups": Object {},
+          },
+        },
+      },
+      "strict": Object {
+        "text-caption-1-font-size": 12,
+        "text-caption-1-font-weight": "400",
+        "text-caption-1-line-height": 16,
+        "text-caption-2-font-size": 12,
+        "text-caption-2-font-weight": "600",
+        "text-caption-2-line-height": 16,
+        "text-heading-1-font-size": 36,
+        "text-heading-1-font-weight": "800",
+        "text-heading-1-line-height": 48,
+        "text-heading-2-font-size": 32,
+        "text-heading-2-font-weight": "800",
+        "text-heading-2-line-height": 40,
+        "text-heading-3-font-size": 30,
+        "text-heading-3-font-weight": "800",
+        "text-heading-3-line-height": 40,
+        "text-heading-4-font-size": 26,
+        "text-heading-4-font-weight": "800",
+        "text-heading-4-line-height": 32,
+        "text-heading-5-font-size": 22,
+        "text-heading-5-font-weight": "800",
+        "text-heading-5-line-height": 32,
+        "text-heading-6-font-size": 18,
+        "text-heading-6-font-weight": "800",
+        "text-heading-6-line-height": 24,
+        "text-label-font-size": 12,
+        "text-label-font-weight": "800",
+        "text-label-line-height": 16,
+        "text-paragraph-1-font-size": 15,
+        "text-paragraph-1-font-weight": "400",
+        "text-paragraph-1-line-height": 20,
+        "text-paragraph-2-font-size": 13,
+        "text-paragraph-2-font-weight": "400",
+        "text-paragraph-2-line-height": 16,
+        "text-subtitle-1-font-size": 15,
+        "text-subtitle-1-font-weight": "600",
+        "text-subtitle-1-line-height": 24,
+        "text-subtitle-2-font-size": 13,
+        "text-subtitle-2-font-weight": "600",
+        "text-subtitle-2-line-height": 24,
+      },
+      "version": 1,
+    }
+  }
+  theme={
+    Object {
+      "background-alternative-color-1": "$color-basic-800",
+      "background-alternative-color-2": "$color-basic-900",
+      "background-alternative-color-3": "$color-basic-1000",
+      "background-alternative-color-4": "$color-basic-1100",
+      "background-basic-color-1": "$color-basic-100",
+      "background-basic-color-2": "$color-basic-200",
+      "background-basic-color-3": "$color-basic-300",
+      "background-basic-color-4": "$color-basic-400",
+      "background-primary-color-1": "$color-primary-500",
+      "background-primary-color-2": "$color-primary-600",
+      "background-primary-color-3": "$color-primary-700",
+      "background-primary-color-4": "$color-primary-800",
+      "border-alternative-color-1": "$color-basic-800",
+      "border-alternative-color-2": "$color-basic-900",
+      "border-alternative-color-3": "$color-basic-1000",
+      "border-alternative-color-4": "$color-basic-1100",
+      "border-alternative-color-5": "$color-basic-1100",
+      "border-basic-color-1": "$color-basic-100",
+      "border-basic-color-2": "$color-basic-200",
+      "border-basic-color-3": "$color-basic-300",
+      "border-basic-color-4": "$color-basic-400",
+      "border-basic-color-5": "$color-basic-500",
+      "border-danger-color-1": "$color-danger-500",
+      "border-danger-color-2": "$color-danger-600",
+      "border-danger-color-3": "$color-danger-700",
+      "border-danger-color-4": "$color-danger-800",
+      "border-danger-color-5": "$color-danger-900",
+      "border-info-color-1": "$color-info-500",
+      "border-info-color-2": "$color-info-600",
+      "border-info-color-3": "$color-info-700",
+      "border-info-color-4": "$color-info-800",
+      "border-info-color-5": "$color-info-900",
+      "border-primary-color-1": "$color-primary-500",
+      "border-primary-color-2": "$color-primary-600",
+      "border-primary-color-3": "$color-primary-700",
+      "border-primary-color-4": "$color-primary-800",
+      "border-primary-color-5": "$color-primary-900",
+      "border-success-color-1": "$color-success-500",
+      "border-success-color-2": "$color-success-600",
+      "border-success-color-3": "$color-success-700",
+      "border-success-color-4": "$color-success-800",
+      "border-success-color-5": "$color-success-900",
+      "border-warning-color-1": "$color-warning-500",
+      "border-warning-color-2": "$color-warning-600",
+      "border-warning-color-3": "$color-warning-700",
+      "border-warning-color-4": "$color-warning-800",
+      "border-warning-color-5": "$color-warning-900",
+      "color-basic-100": "#FFFFFF",
+      "color-basic-1000": "#151A30",
+      "color-basic-1100": "#101426",
+      "color-basic-200": "#F7F9FC",
+      "color-basic-300": "#EDF1F7",
+      "color-basic-400": "#E4E9F2",
+      "color-basic-500": "#C5CEE0",
+      "color-basic-600": "#8F9BB3",
+      "color-basic-700": "#2E3A59",
+      "color-basic-800": "#222B45",
+      "color-basic-900": "#1A2138",
+      "color-basic-active": "$color-basic-400",
+      "color-basic-default": "$color-basic-200",
+      "color-basic-disabled": "$color-basic-300",
+      "color-basic-focus": "$color-basic-500",
+      "color-danger-100": "#FFF2F2",
+      "color-danger-200": "#FFD6D9",
+      "color-danger-300": "#FFA8B4",
+      "color-danger-400": "#FF708D",
+      "color-danger-500": "#FF3D71",
+      "color-danger-600": "#DB2C66",
+      "color-danger-700": "#B81D5B",
+      "color-danger-800": "#94124E",
+      "color-danger-900": "#700940",
+      "color-danger-active": "$color-danger-600",
+      "color-danger-default": "$color-danger-500",
+      "color-danger-disabled": "$color-danger-300",
+      "color-danger-focus": "$color-danger-700",
+      "color-info-100": "#F2F8FF",
+      "color-info-200": "#C7E2FF",
+      "color-info-300": "#94CBFF",
+      "color-info-400": "#42AAFF",
+      "color-info-500": "#0095FF",
+      "color-info-600": "#006FD6",
+      "color-info-700": "#0057C2",
+      "color-info-800": "#0041A8",
+      "color-info-900": "#002885",
+      "color-info-active": "$color-info-600",
+      "color-info-default": "$color-info-500",
+      "color-info-disabled": "$color-info-300",
+      "color-info-focus": "$color-info-700",
+      "color-primary-100": "#F2F6FF",
+      "color-primary-200": "#D9E4FF",
+      "color-primary-300": "#A6C1FF",
+      "color-primary-400": "#598BFF",
+      "color-primary-500": "#3366FF",
+      "color-primary-600": "#274BDB",
+      "color-primary-700": "#1A34B8",
+      "color-primary-800": "#102694",
+      "color-primary-900": "#091C7A",
+      "color-primary-active": "$color-primary-600",
+      "color-primary-default": "$color-primary-500",
+      "color-primary-disabled": "$color-primary-200",
+      "color-primary-focus": "$color-primary-700",
+      "color-secondary-100": "#F7F2FF",
+      "color-secondary-200": "#E0D1FF",
+      "color-secondary-300": "#C5A8FF",
+      "color-secondary-400": "#A375FF",
+      "color-secondary-500": "#884DFF",
+      "color-secondary-600": "#6A39DB",
+      "color-secondary-700": "#4F28B8",
+      "color-secondary-800": "#371B94",
+      "color-secondary-900": "#26117A",
+      "color-success-100": "#EDFFF3",
+      "color-success-200": "#B3FFD6",
+      "color-success-300": "#8CFAC7",
+      "color-success-400": "#51F0B0",
+      "color-success-500": "#00E096",
+      "color-success-600": "#00B383",
+      "color-success-700": "#008F72",
+      "color-success-800": "#007566",
+      "color-success-900": "#00524C",
+      "color-success-active": "$color-success-600",
+      "color-success-default": "$color-success-500",
+      "color-success-disabled": "$color-success-200",
+      "color-success-focus": "$color-success-700",
+      "color-tertiary-100": "#FFDED6",
+      "color-tertiary-200": "#FFDED6",
+      "color-tertiary-300": "#FFDED6",
+      "color-tertiary-400": "#FFDED6",
+      "color-tertiary-500": "#FFDED6",
+      "color-tertiary-600": "#FFDED6",
+      "color-tertiary-700": "#FFDED6",
+      "color-tertiary-800": "#FFDED6",
+      "color-tertiary-900": "#FFDED6",
+      "color-warning-100": "#FFFDF2",
+      "color-warning-200": "#FFF1C2",
+      "color-warning-300": "#FFE59E",
+      "color-warning-400": "#FFC94D",
+      "color-warning-500": "#FFAA00",
+      "color-warning-600": "#DB8B00",
+      "color-warning-700": "#B86E00",
+      "color-warning-800": "#945400",
+      "color-warning-900": "#703C00",
+      "color-warning-active": "$color-warning-600",
+      "color-warning-default": "$color-warning-500",
+      "color-warning-disabled": "$color-warning-300",
+      "color-warning-focus": "$color-warning-700",
+      "icon-active-color": "$color-primary-500",
+      "icon-basic-color": "$color-basic-700",
+      "icon-control-color": "$color-basic-100",
+      "icon-disabled-color": "$color-basic-400",
+      "icon-hint-color": "$color-basic-500",
+      "outline-color": "$color-basic-400",
+      "text-alternate-color": "$color-basic-100",
+      "text-basic-color": "$color-basic-900",
+      "text-control-color": "$color-basic-100",
+      "text-danger-active-color": "$color-danger-active",
+      "text-danger-color": "$color-danger-default",
+      "text-danger-disabled-color": "$color-danger-disabled",
+      "text-disabled-color": "$color-basic-500",
+      "text-hint-color": "$color-basic-600",
+      "text-info-active-color": "$color-info-active",
+      "text-info-color": "$color-info-default",
+      "text-info-disabled-color": "$color-info-disabled",
+      "text-primary-active-color": "$color-primary-active",
+      "text-primary-color": "$color-primary-default",
+      "text-primary-disabled-color": "$color-primary-disabled",
+      "text-success-active-color": "$color-success-active",
+      "text-success-color": "$color-success-default",
+      "text-success-disabled-color": "$color-success-disabled",
+      "text-warning-active-color": "$color-warning-active",
+      "text-warning-color": "$color-warning-default",
+      "text-warning-disabled-color": "$color-warning-disabled",
+    }
+  }
+>
+  <IconRegistry
+    icons={
+      Object {
+        "icons": null,
+        "name": "eva",
+      }
+    }
+  />
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <PersistGate
+      loading={<SplashScreen />}
+      persistor={
+        Object {
+          "dispatch": [Function],
+          "flush": [Function],
+          "getState": [Function],
+          "pause": [Function],
+          "persist": [Function],
+          "purge": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+    >
+      <Connect(RootScreen) />
+    </PersistGate>
+  </Provider>
+</ApplicationProvider>
+`;

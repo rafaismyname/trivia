@@ -8,7 +8,7 @@ import GameSelectors from '../../Stores/Game/Selectors';
 import i18n from '../../Locales/i18n';
 import Style from './GameScreenStyle';
 
-function GameScreen(props) {
+export function GameScreen(props) {
   return (
     <BaseLayout>
       <Layout style={Style.question}>

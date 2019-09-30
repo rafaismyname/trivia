@@ -8,7 +8,7 @@ import GameSelectors from '../../Stores/Game/Selectors';
 import i18n from '../../Locales/i18n';
 import Style from './ResultScreenStyle';
 
-function ResultScreen(props) {
+export function ResultScreen(props) {
   const renderAnswer = ({ item }) => {
     return (
       <ListItem

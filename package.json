@@ -36,13 +36,30 @@
     "@babel/runtime": "^7.6.0",
     "@react-native-community/eslint-config": "^0.0.5",
     "babel-jest": "^24.9.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^6.4.0",
     "jest": "^24.9.0",
+    "jest-environment-enzyme": "^7.1.1",
+    "jest-enzyme": "^7.1.1",
     "metro-react-native-babel-preset": "^0.56.0",
-    "react-test-renderer": "16.8.6",
+    "react-dom": "^16.9.0",
     "redux-mock-store": "^1.5.3"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "testEnvironment": "enzyme",
+    "testEnvironmentOptions": {
+      "enzymeAdapter": "react16"
+    },
+    "setupFiles": [
+      "<rootDir>/node_modules/react-native-gesture-handler/jestSetup.js"
+    ],
+    "setupFilesAfterEnv": [
+      "jest-enzyme"
+    ],
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/(?!@ui-kitten/eva-icons)/"
+    ]
   }
 }
