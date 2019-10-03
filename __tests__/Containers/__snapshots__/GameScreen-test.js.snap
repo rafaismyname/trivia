@@ -27,26 +27,15 @@ exports[`Test GameScreen container should render properly 1`] = `
       Is this a test?
     </TextComponent>
   </LayoutComponent>
-  <LayoutComponent
-    style={
+  <AnswerChooser
+    currentAnswer={Object {}}
+    currentQuestion={
       Object {
-        "alignSelf": "center",
-        "flexDirection": "row",
-        "marginTop": 50,
-        "paddingHorizontal": 25,
+        "category": "Test Category",
+        "question": "Is this a test?",
       }
     }
-  >
-    <AnswerButton
-      callback={[MockFunction]}
-      title="True"
-      value="True"
-    />
-    <AnswerButton
-      callback={[MockFunction]}
-      title="False"
-      value="False"
-    />
-  </LayoutComponent>
+    onChoose={[MockFunction]}
+  />
 </BaseLayout>
 `;

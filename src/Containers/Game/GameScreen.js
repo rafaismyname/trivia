@@ -2,10 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Layout, Text } from 'react-native-ui-kitten';
 import BaseLayout from '../../Components/BaseLayout';
-import AnswerButton from '../../Components/AnswerButton';
+import AnswerChooser from '../../Components/AnswerChooser';
 import GameActions from '../../Stores/Game/Actions';
 import GameSelectors from '../../Stores/Game/Selectors';
-import i18n from '../../Locales/i18n';
 import Style from './GameScreenStyle';
 
 export function GameScreen(props) {
@@ -16,22 +15,11 @@ export function GameScreen(props) {
         <Text category="c2">{props.currentQuestion.category}</Text>
         <Text category="h4">{props.currentQuestion.question}</Text>
       </Layout>
-      <Layout style={Style.answer}>
-        <AnswerButton
-          title={i18n.t('game.true')}
-          value="True"
-          answer={props.currentAnswer.answer}
-          correct={props.currentAnswer.correct}
-          callback={props.chooseAnswer}
-        />
-        <AnswerButton
-          title={i18n.t('game.false')}
-          value="False"
-          answer={props.currentAnswer.answer}
-          correct={props.currentAnswer.correct}
-          callback={props.chooseAnswer}
-        />
-      </Layout>
+      <AnswerChooser
+        currentQuestion={props.currentQuestion}
+        currentAnswer={props.currentAnswer}
+        onChoose={props.chooseAnswer}
+      />
     </BaseLayout>
   );
 }

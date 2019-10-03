@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test AnswerChooser component should properly render on "multiple type" question 1`] = `
+<LayoutComponent
+  style={
+    Object {
+      "alignSelf": "center",
+      "flexDirection": "row",
+      "marginTop": 50,
+      "paddingHorizontal": 25,
+    }
+  }
+>
+  <AnswerButton
+    callback={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    key="0"
+    title="A"
+    value="A"
+  />
+  <AnswerButton
+    callback={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    key="1"
+    title="B"
+    value="B"
+  />
+  <AnswerButton
+    callback={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    key="2"
+    title="C"
+    value="C"
+  />
+  <AnswerButton
+    callback={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    key="3"
+    title="D"
+    value="D"
+  />
+</LayoutComponent>
+`;
+
+exports[`Test AnswerChooser component should render properly 1`] = `
+<LayoutComponent
+  style={
+    Object {
+      "alignSelf": "center",
+      "flexDirection": "row",
+      "marginTop": 50,
+      "paddingHorizontal": 25,
+    }
+  }
+>
+  <AnswerButton
+    callback={[MockFunction]}
+    key="0"
+    title="True"
+    value="True"
+  />
+  <AnswerButton
+    callback={[MockFunction]}
+    key="1"
+    title="False"
+    value="False"
+  />
+</LayoutComponent>
+`;
