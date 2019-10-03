@@ -217,13 +217,13 @@ PODS:
     - React-cxxreact (= 0.61.2)
     - React-jsi (= 0.61.2)
     - ReactCommon/jscallinvoker (= 0.61.2)
-  - RNCAsyncStorage (1.6.1):
+  - RNCAsyncStorage (1.6.2):
     - React
   - RNGestureHandler (1.4.1):
     - React
-  - RNLocalize (1.2.0):
+  - RNLocalize (1.2.1):
     - React
-  - RNSVG (9.9.4):
+  - RNSVG (9.11.1):
     - React
   - Yoga (1.14.0)
 
@@ -351,10 +351,10 @@ SPEC CHECKSUMS:
   React-RCTText: e3ef6191cdb627855ff7fe8fa0c1e14094967fb8
   React-RCTVibration: fb54c732fd20405a76598e431aa2f8c2bf527de9
   ReactCommon: 5848032ed2f274fcb40f6b9ec24067787c42d479
-  RNCAsyncStorage: 621bad7a889b5bf1583a52547f2dcd3a4d1ff15e
+  RNCAsyncStorage: 5ae4d57458804e99f73d427214442a6b10a53856
   RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
-  RNLocalize: 3d67438cbed25c21d512edb6357e29b6db9ed2d9
-  RNSVG: 435cda60cd9e1ea6188eb0e21c12fc0f85def8e8
+  RNLocalize: 7206d44eb341d6e2a61a8184b831c64a5539fcdf
+  RNSVG: be27aa7c58819f97399388ae53d7fa0572f32c7f
   Yoga: 14927e37bd25376d216b150ab2a561773d57911f
 
 PODFILE CHECKSUM: fc73443f8ba08e404fae1292133e9cd722ef2025
